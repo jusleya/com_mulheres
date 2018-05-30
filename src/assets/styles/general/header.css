@@ -1,0 +1,26 @@
+.navbar {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  background: #343a40; }
+
+.navbar-item {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  color: white; }
+  .navbar-item:hover {
+    color: #b0c5d9 !important;
+    background-color: #727f8c !important; }
+
+@media (max-width: 1023px) {
+  .navbar-item {
+    color: #343a40; }
+  .navbar-burger {
+    color: white;
+    height: 64px; }
+  .navbar-link:hover {
+    color: white !important; }
+  .navbar-item:hover {
+    color: #486a8c !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid #727f8c !important; } }

@@ -1,0 +1,31 @@
+//----------------------
+// Variables
+//----------------------
+@import './variables.scss';
+
+//----------------------
+// Estilos de terceiros
+//----------------------
+@import 'bulma/bulma';
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Rajdhani');
+
+//----------------------
+// Base
+//----------------------
+body {
+  background: white;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+//----------------------
+// General
+//----------------------
+@import './general/header.scss';
+@import './general/footer.scss';
+
+//----------------------
+// Views
+//----------------------

@@ -47,7 +47,7 @@ class Header extends Component {
             </NavbarMenu>
           </Container>
         </Navbar>
-        <div style={{marginBottom:'64px'}}></div>
+        <div style={{marginBottom:'52px'}}></div>
         
       </header>
     );

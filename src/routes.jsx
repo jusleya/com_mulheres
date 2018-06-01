@@ -2,8 +2,8 @@ import React from 'react';
 import {Switch, Route, BrowserRouter as Router} from 'react-router-dom';
 
 // General
-import Header from './components/general/Header';
-import Footer from './components/general/Footer';
+import Header from './general/Header';
+import Footer from './general/Footer';
 import Home from './pages/Home';
 
 const Main = () => (

@@ -1,0 +1,12 @@
+#conteudo .imagem {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12); }
+
+#conteudo .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; }
+
+#conteudo .titulo {
+  color: #486a8c;
+  font-size: 40px;
+  padding-top: 75px;
+  text-align: center; }

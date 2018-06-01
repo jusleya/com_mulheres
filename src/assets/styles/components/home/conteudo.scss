@@ -1,0 +1,22 @@
+//----------------------
+// Variables
+//----------------------
+@import '../../variables.scss';
+
+#conteudo {
+  .imagem {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .text {
+    font-family: $family-second;
+    font-size: 16px;
+  }
+
+  .titulo {
+    color: $azul_claro;
+    font-size: 40px;
+    padding-top: 75px;
+    text-align: center;
+  }
+}

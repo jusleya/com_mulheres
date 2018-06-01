@@ -11,6 +11,14 @@ const Footer = () => (
         <Columns align="center">
           <Column>
             <h1>Eventos</h1>
+            <ul>
+              <li>
+                <NavLink to="/eventos/calendario">Calendário</NavLink>
+              </li>
+              <li>
+                <NavLink to="/eventos/realizados">Realizados</NavLink>
+              </li>
+            </ul>
           </Column>
           <Column>
             <h1>Sobre nós</h1>

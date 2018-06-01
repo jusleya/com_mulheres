@@ -1,0 +1,15 @@
+#home .section {
+  padding: 0px 0px 50px 0px; }
+
+#home #banner .bg {
+  height: 330px; }
+
+#home #banner .titulo {
+  color: #b0c5d9;
+  font-size: 60px;
+  font-weight: 300 !important;
+  letter-spacing: -0.5px;
+  line-height: 1.17;
+  padding-top: 100px;
+  text-align: center;
+  text-shadow: #000 -1px 1px 1px; }

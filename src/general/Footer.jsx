@@ -22,9 +22,25 @@ const Footer = () => (
           </Column>
           <Column>
             <h1>Sobre nós</h1>
+            <ul>
+              <li>
+                <NavLink to="/eventos/calendario">Quem somos</NavLink>
+              </li>
+              <li>
+                <NavLink to="/eventos/realizados">Parceiros</NavLink>
+              </li>
+            </ul>
           </Column>
           <Column>
             <h1>Contato</h1>
+            <ul>
+              <li>
+                <NavLink to="/eventos/calendario">Redes sociais</NavLink>
+              </li>
+              <li>
+                <NavLink to="/eventos/realizados">email</NavLink>
+              </li>
+            </ul>
           </Column>
         </Columns>
       </div>

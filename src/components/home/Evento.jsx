@@ -23,7 +23,7 @@ const Nos = () => (
           <br/>
           <div align="center"><Button link="/eventos">Saiba mais<i className="material-icons">keyboard_arrow_right</i></Button></div>
         </Conteudo>
-        <hr className="is-centered" style={{border:"1px dashed rgb(189, 203, 216)"}}/>        
+        <hr className="is-centered" style={{border:"1px dashed rgb(189, 203, 216)"}}/>
       </div>
     </div>
   </div>

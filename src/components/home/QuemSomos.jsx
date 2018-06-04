@@ -8,7 +8,7 @@ import Button   from '../../general/Button';
 import nos from '../../assets/image/home/quem-somos.jpg'
 
 const Nos = () => (
-  <div style={{paddingTop:'70px'}}>
+  <div>
     <div className="section">
       <div className="container">
         <Conteudo

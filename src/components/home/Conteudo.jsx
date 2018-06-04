@@ -1,5 +1,6 @@
 import React from 'react';
 
+//CSS
 import '../../assets/styles/components/home/conteudo.css';
 
 const Image = (props) => (
@@ -12,7 +13,7 @@ const Text = (props) => (
   <div id="conteudo">
     <p className="titulo">{props.title}</p>
     <br/>
-    <span className="text">{props.children}</span>
+    <div className="text">{props.children}</div>
   </div>
 );
 
@@ -23,7 +24,7 @@ const Conteudo = (props) => {
         <div className="column is-6">
           <Image img={props.img} />
         </div>
-        <div className="column is-4">
+        <div className="column is-5">
           <Text title={props.title}>{props.children}</Text>
         </div>
       </div>
@@ -31,7 +32,7 @@ const Conteudo = (props) => {
   ) : (
     <div id="conteudo">
       <div className="columns is-centered">
-        <div className="column is-4">
+        <div className="column is-5">
           <Text title={props.title}>{props.children}</Text>
         </div>
         <div className="column is-6">

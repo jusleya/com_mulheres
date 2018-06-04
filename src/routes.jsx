@@ -4,7 +4,9 @@ import {Switch, Route, BrowserRouter as Router} from 'react-router-dom';
 // General
 import Header from './general/Header';
 import Footer from './general/Footer';
-import Home from './pages/Home';
+
+//Pages
+import Home   from './pages/Home';
 
 const Main = () => (
   <Router>

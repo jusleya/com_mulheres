@@ -11,12 +11,13 @@
   .text {
     font-family: $family-second;
     font-size: 16px;
+    text-align: justify;
   }
 
   .titulo {
     color: $azul_claro;
     font-size: 40px;
-    padding-top: 75px;
+    padding-top: 50px;
     text-align: center;
   }
 }

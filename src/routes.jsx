@@ -7,6 +7,7 @@ import Footer from './general/Footer';
 
 //Pages
 import Home   from './pages/Home';
+import Sobre   from './pages/Sobre';
 
 const Main = () => (
   <Router>
@@ -14,6 +15,7 @@ const Main = () => (
       <Header />
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/sobre' component={Sobre} />
       </Switch>
       <Footer />
     </main>

@@ -1,13 +1,17 @@
 import React from 'react';
 
+//Components
+import Grupo from '../components/sobre/Grupo';
+
+//CSS
+import '../assets/styles/pages/sobre.css';
+import Nos from '../components/sobre/Nos';
+
 const Sobre = () => (
   <div id="sobre">
     <div className="section">
-      <div className="container">
-        <div>
-          
-        </div>
-      </div>
+      <Grupo />
+      <Nos />
     </div>
   </div>
 );

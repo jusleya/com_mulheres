@@ -1,0 +1,17 @@
+#sobre .titulo {
+  color: #486a8c;
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-align: center; }
+
+#sobre #nos #conteudo {
+  text-align: center; }
+  #sobre #nos #conteudo .imagem {
+    height: 500px;
+    width: auto; }
+
+#sobre #nos .icon {
+  fill: #2e4459;
+  height: 30px;
+  margin-left: 16px;
+  width: 30px; }

@@ -11,8 +11,8 @@ import '../assets/styles/pages/home.css';
 
 const Home = () => (
   <div id="home">
-    <div className="section-home">
-      <Banner />
+    <Banner />
+    <div className="section">
       <QuemSomos />
       <Evento />
       <Contato />

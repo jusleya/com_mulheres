@@ -1,0 +1,29 @@
+//----------------------
+// Variables
+//----------------------
+@import '../variables.scss';
+
+#sobre {
+  .titulo {
+    color: $azul_claro;
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  #nos {
+    #conteudo {
+      text-align: center;
+      .imagem {
+        height: 500px;
+        width: auto;
+      }
+    }
+    .icon {
+      fill: $azul_escuro;
+      height: 30px;
+      margin-left: 16px;
+      width: 30px;
+    }
+  }
+}

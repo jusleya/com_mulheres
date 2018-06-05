@@ -1,7 +1,7 @@
 import React from 'react';
 
 //CSS
-import '../../assets/styles/components/home/conteudo.css';
+import '../assets/styles/general/conteudo.css';
 
 const Image = (props) => (
   <div id="conteudo">

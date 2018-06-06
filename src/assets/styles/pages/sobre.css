@@ -5,7 +5,8 @@
   text-align: center; }
 
 #sobre #nos #card {
-  padding-right: 14px; }
+  padding-right: 14px;
+  max-width: 280px; }
   #sobre #nos #card .box-card {
     border-radius: 0px;
     border-right: 1px dashed #727f8c;

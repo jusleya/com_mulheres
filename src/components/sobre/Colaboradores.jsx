@@ -16,11 +16,9 @@ import {
 
 const Colab = () => (
   <div id="colab">
-    <div className="columns">
-      <Card image={Jusley} name="Jusley Arley" funcao="Administração"/>
-      <Card image={Jusley} name="Jusley Arley" funcao="Administração"/>
-      <Card image={Jusley} name="Jusley Arley" funcao="Administração"/>
-      <Card image={Jusley} name="Jusley Arley" funcao="Administração"/>
+    <div className="columns is-centered">
+      <Card image={Jusley} name="Jaine Conceição" funcao="Colaboradora"/>
+      <Card image={Jusley} name="Natália" funcao="Coladoradora"/>
     </div>
   </div>
 );

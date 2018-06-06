@@ -4,14 +4,18 @@
   padding-bottom: 20px;
   text-align: center; }
 
-#sobre #nos #conteudo {
-  text-align: center; }
-  #sobre #nos #conteudo .imagem {
-    height: 500px;
-    width: auto; }
-
-#sobre #nos .icon {
-  fill: #2e4459;
-  height: 30px;
-  margin-left: 16px;
-  width: 30px; }
+#sobre #nos #card {
+  padding-right: 14px; }
+  #sobre #nos #card .box-card {
+    border-radius: 0px;
+    border-right: 1px dashed #727f8c;
+    border-bottom: 1px dashed #727f8c; }
+  #sobre #nos #card .name {
+    color: #2e4459;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center; }
+  #sobre #nos #card .funcao {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-align: center; }

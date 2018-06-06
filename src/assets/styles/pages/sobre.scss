@@ -12,18 +12,24 @@
   }
 
   #nos {
-    #conteudo {
-      text-align: center;
-      .imagem {
-        height: 500px;
-        width: auto;
+    #card {
+      padding-right: 14px;
+      .box-card {
+        border-radius: 0px;
+        border-right: 1px dashed $azul_cinza;
+        border-bottom: 1px dashed $azul_cinza;
       }
-    }
-    .icon {
-      fill: $azul_escuro;
-      height: 30px;
-      margin-left: 16px;
-      width: 30px;
+      .name {
+        color: $azul_escuro;
+        font-family: $family-second;
+        font-size: 20px;
+        text-align: center;
+      }
+      .funcao {
+        font-family: $family-second;
+        font-size: 18px;
+        text-align: center;
+      }
     }
   }
 }

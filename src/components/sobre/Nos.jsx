@@ -5,7 +5,9 @@ import Adm from './Administracao';
 
 const Nos = () => (
   <div id="nos">
-    <Adm />
+    <div className="container">
+      <Adm />
+    </div>
     {/*<Colab />*/}
   </div>
 );

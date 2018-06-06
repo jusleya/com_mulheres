@@ -17,7 +17,7 @@ import {
 const hr = {border:"1px dashed rgb(189, 203, 216)"};
 
 const Adm = () => (
-  <div>
+  <div id="adm">
     
   </div>
 );

@@ -2,7 +2,7 @@ import React from 'react';
 
 //Components
 import Banner    from '../components/home/Banner';
-import Contato   from '../components/home/ContatoComponent';
+import Parceiros from '../components/home/Parceiros';
 import Evento    from '../components/home/Evento';
 import QuemSomos from '../components/home/QuemSomos';
 
@@ -15,7 +15,7 @@ const Home = () => (
     <div className="section">
       <QuemSomos />
       <Evento />
-      <Contato />
+      <Parceiros />
     </div>
   </div>
 );

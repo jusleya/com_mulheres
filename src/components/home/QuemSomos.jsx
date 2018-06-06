@@ -16,7 +16,7 @@ const Nos = () => (
       title="COM² Mulheres"
     >
       Criado em junho de 2017, somos um grupo de sete
-      mulheres que almejam a inclusão de mais mulheres
+      mulheres que desejam a inclusão de mais mulheres
       na área de computação. Queremos igualdade, pois
       não é o nosso gênero que define se somos capazes
       de programar.

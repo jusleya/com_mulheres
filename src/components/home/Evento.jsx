@@ -17,7 +17,7 @@ const Nos = () => (
       position="left"
     >
       Eventualmente realizamos eventos independentes ou
-      com grupos parceiros, que nos permite ficar
+      com grupos parceiros que nos permite ficar
       mais próximos do nosso público compartilhando
       nossas experiências na área e/ou na vida acadêmica.
       <br/>

@@ -6,10 +6,8 @@ import Colab from './Colaboradores';
 const Nos = () => (
   <div id="nos">
     <div className="container">
-      <p className="titulo">A gente</p>
+      <p className="titulo">Nós</p>
       <Adm />
-      <br/>
-      <br/>
       <Colab />
     </div>
   </div>

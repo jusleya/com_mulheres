@@ -14,22 +14,96 @@
   #nos {
     #card {
       padding-right: 14px;
-      max-width: 280px;
+      height: 461px;
+
       .box-card {
         border-radius: 0px;
         border-right: 1px dashed $azul_cinza;
         border-bottom: 1px dashed $azul_cinza;
+        max-width: 280px;
       }
-      .name {
-        color: $azul_escuro;
-        font-family: $family-second;
-        font-size: 20px;
-        text-align: center;
-      }
+
       .funcao {
         font-family: $family-second;
         font-size: 18px;
         text-align: center;
+        // min-height: 50px;
+      }
+
+      .imagem {
+        max-height: 320px;
+      }
+
+      .name {
+        color: $azul_escuro;
+        font-family: $family-second;
+        font-size: 20px;
+        // min-height: 100px;
+        text-align: center;
+      }
+
+      .ver-mais {
+        text-align: center;
+        padding-top: 12px;
+        // min-height: 100px;
+        a {
+          color: $preto;
+          font-family: $family-second;
+          font-size: 15px;
+          &:hover {
+            color: $azul_claro;
+          }
+          i {
+            vertical-align: -8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Configuração dos cards
+@media (min-width: 769px) and (max-width: 977px) {
+  #sobre {
+    #nos {
+      #card {
+        text-align: center;
+        .box-card {
+          max-height: 300px;
+        }
+        
+        .funcao {
+          font-size: 13px;
+        }
+
+        .imagem {
+          max-height: 190px;
+        }
+  
+        .name {
+          font-size: 14px;
+        }
+
+        .ver-mais {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Configuração dos cards
+@media (max-width: 768px) {
+  #sobre {
+    #nos {
+      #card {
+        text-align: center;
+        padding-right: 0px;
+        .box-card {
+          margin: 0 auto;
+        }
       }
     }
   }

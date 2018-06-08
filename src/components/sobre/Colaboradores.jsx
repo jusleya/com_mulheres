@@ -15,13 +15,31 @@ import {
   TwitterBoxIcon
 } from 'mdi-react';*/
 
-const Colab = () => (
-  <div id="colab">
-    <div className="columns is-centered">
-      <Card image={Jaine} name="Jaine Conceição" funcao="Colaboradora"/>
-      <Card image={Natalia} name="Natália Guimarães" funcao="Coladoradora"/>
-    </div>
-  </div>
-);
+class Colab extends React.Component {
+  state = {
+    divVerMais: '',
+    isOcultar: ''
+  };
+
+  setDivVerMais = (verMais) => {
+    this.setState({divVerMais: verMais, isOcultar: false});
+  }
+
+  render() {
+    var styleList = this.state.divVerMais ? 'fadeIn' : 'fadeOut';
+
+    return (
+      <div id="nos-children">
+        <div className="columns is-centered">
+          <Card image={Jaine} name="Jaine Conceição" funcao="Colaboradora" verMais={this.setDivVerMais} descricao="Descrição de Jaine" isOcultar={this.state.isOcultar}/>
+          <Card image={Natalia} name="Natália Guimarães" funcao="Coladoradora" verMais={this.setDivVerMais} descricao="Descrição de Natalia" isOcultar={this.state.isOcultar}/>
+        </div>
+        <div className={styleList}>
+          {this.state.divVerMais}
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Colab;

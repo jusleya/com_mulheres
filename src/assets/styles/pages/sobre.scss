@@ -12,10 +12,23 @@
   }
 
   #nos {
-    #card {
-      padding-right: 14px;
-      height: 461px;
+    #nos-children {
+      .fadeOut {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s;
+      }
 
+      .fadeIn {
+        opacity: 1;
+        width: auto;
+        height: auto;
+        transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
+      }
+    }
+
+    #card {
       .box-card {
         border-radius: 0px;
         border-right: 1px dashed $azul_cinza;

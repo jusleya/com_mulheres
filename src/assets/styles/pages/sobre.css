@@ -4,36 +4,49 @@
   padding-bottom: 20px;
   text-align: center; }
 
-#sobre #nos #card {
-  padding-right: 14px;
-  height: 461px; }
-  #sobre #nos #card .box-card {
-    border-radius: 0px;
-    border-right: 1px dashed #727f8c;
-    border-bottom: 1px dashed #727f8c;
-    max-width: 280px; }
-  #sobre #nos #card .funcao {
+#sobre #nos #nos-children .fadeOut {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s; }
+
+#sobre #nos #nos-children .fadeIn {
+  opacity: 1;
+  width: auto;
+  height: auto;
+  transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s; }
+
+#sobre #nos #card .box-card {
+  border-radius: 0px;
+  border-right: 1px dashed #727f8c;
+  border-bottom: 1px dashed #727f8c;
+  max-width: 280px; }
+
+#sobre #nos #card .funcao {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-align: center; }
+
+#sobre #nos #card .imagem {
+  max-height: 320px; }
+
+#sobre #nos #card .name {
+  color: #2e4459;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center; }
+
+#sobre #nos #card .ver-mais {
+  text-align: center;
+  padding-top: 12px; }
+  #sobre #nos #card .ver-mais a {
+    color: #343a40;
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    text-align: center; }
-  #sobre #nos #card .imagem {
-    max-height: 320px; }
-  #sobre #nos #card .name {
-    color: #2e4459;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    text-align: center; }
-  #sobre #nos #card .ver-mais {
-    text-align: center;
-    padding-top: 12px; }
-    #sobre #nos #card .ver-mais a {
-      color: #343a40;
-      font-family: "Montserrat", sans-serif;
-      font-size: 15px; }
-      #sobre #nos #card .ver-mais a:hover {
-        color: #486a8c; }
-      #sobre #nos #card .ver-mais a i {
-        vertical-align: -8px; }
+    font-size: 15px; }
+    #sobre #nos #card .ver-mais a:hover {
+      color: #486a8c; }
+    #sobre #nos #card .ver-mais a i {
+      vertical-align: -8px; }
 
 @media (min-width: 769px) and (max-width: 977px) {
   #sobre #nos #card {

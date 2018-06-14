@@ -35,6 +35,18 @@
       #sobre #equipe #card .ver-mais a i {
         vertical-align: -8px; }
 
+#sobre #equipe #equipe-children .box-descricao {
+  border-radius: 0px;
+  border-left: 1px dashed #727f8c;
+  border-bottom: 1px dashed #727f8c;
+  margin-bottom: 24px;
+  text-align: center; }
+
+#sobre #equipe #equipe-children .descricao {
+  font-family: "Montserrat", sans-serif;
+  padding: 12px;
+  text-align: justify; }
+
 #sobre #equipe #equipe-children .fadeOut {
   opacity: 0;
   width: 0;
@@ -46,6 +58,12 @@
   width: auto;
   height: auto;
   transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s; }
+
+#sobre #equipe #equipe-children .icon {
+  fill: #2e4459 !important;
+  height: 32px;
+  margin-left: 12px;
+  width: 32px; }
 
 @media (min-width: 769px) and (max-width: 977px) {
   #sobre #nos #card {

@@ -61,6 +61,22 @@
     }
 
     #equipe-children {
+      .box-descricao {
+        // background: #e7eaee;
+        border-radius: 0px;
+        border-left: 1px dashed $azul_cinza;
+        // border-right: 1px dashed $azul_cinza;
+        border-bottom: 1px dashed $azul_cinza;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+
+      .descricao {
+        font-family: $family-second;
+        padding: 12px;
+        text-align: justify;
+      }
+
       .fadeOut {
         opacity: 0;
         width: 0;
@@ -73,6 +89,17 @@
         width: auto;
         height: auto;
         transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
+      }
+
+      .icon {
+        fill: $azul_escuro !important;
+        height: 32px;
+        margin-left: 12px;
+        width: 32px;
+        // -webkit-transition: 0.2s ease-in;
+        // -moz-transition: 0.2s ease-in;
+        // -o-transition: 0.2s ease-in;
+        // transition: 0.2s ease-in;
       }
     }
   }

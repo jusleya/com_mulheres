@@ -1,48 +1,65 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 
-//Components
-import Card     from './Card';
-//Images
-import Alana from '../../assets/image/sobre/nos/alana.jpg';
-import Jusley from '../../assets/image/sobre/nos/jusley.jpg';
-import Sthe from '../../assets/image/sobre/nos/sthe.jpg';
-import Veronica from '../../assets/image/sobre/nos/veronica.jpg';
-/*Icones
-import {
-  FacebookBoxIcon,
-  LinkedinBoxIcon,
-  InstagramIcon,
-  TwitterBoxIcon
-} from 'mdi-react';*/
+//Componentes
+import Card from './CardComponent';
 
-//const hr = {border:"1px dashed rgb(189, 203, 216)"};
+//Actions
+import {changeC1} from '../../store/sobre/action';
+import {changeC2} from '../../store/sobre/action';
+import {changeC3} from '../../store/sobre/action';
+import {changeC4} from '../../store/sobre/action';
 
-class Adm extends React.Component {
-  state = {
-    divVerMais: ''
-  };
+const Adm = (props) => {
+  return (
+    <div id="equipe-children">
+      <div className="columns is-centered">
+        <Card image={props.image1} name={props.name1} funcao={props.funcao1}>
+          <a onClick={props.changeC1}>
+            {props.c1? 'Menos' : 'Ver Mais'}
+            {props.c1? 
+              <i className="material-icons">keyboard_arrow_up</i> :
+              <i className="material-icons">keyboard_arrow_down</i>
+            }
+          </a>
+        </Card>
 
-  setDivVerMais = (verMais) => {
-    this.setState({divVerMais: verMais});
-  }
+        <Card image={props.image2} name={props.name2} funcao={props.funcao2}>
+          <a onClick={props.changeC2}>
+            {props.c2? 'Menos' : 'Ver Mais'}
+            {props.c2? 
+              <i className="material-icons">keyboard_arrow_up</i> :
+              <i className="material-icons">keyboard_arrow_down</i>
+            }
+          </a>
+        </Card>
 
-  render() {
-    var styleList = this.state.divVerMais ? 'fadeIn' : 'fadeOut';
+        <Card image={props.image3} name={props.name3} funcao={props.funcao3}>
+          <a onClick={props.changeC3}>
+            {props.c3? 'Menos' : 'Ver Mais'}
+            {props.c3? 
+              <i className="material-icons">keyboard_arrow_up</i> :
+              <i className="material-icons">keyboard_arrow_down</i>
+            }
+          </a>
+        </Card>
 
-    return (
-      <div id="nos-children">
-        <div className="columns is-centered">
-          <Card image={Alana} name="Alana Lucia" funcao="Administração" verMais={this.setDivVerMais} descricao="Descrição de 1"/>
-          <Card image={Jusley} name="Jusley Arley" funcao="Administração" verMais={this.setDivVerMais} descricao="Descrição de 2"/>
-          <Card image={Sthe} name="Sthefane Soares" funcao="Administração" verMais={this.setDivVerMais} descricao="Descrição de 3"/>
-          <Card image={Veronica} name="Verônica Nascimento" funcao="Administração" verMais={this.setDivVerMais} descricao="Descrição de 4"/>
-        </div>
-        <div className={styleList}>
-          {this.state.divVerMais}
-        </div>
+        <Card image={props.image4} name={props.name4} funcao={props.funcao4}>
+          <a onClick={props.changeC4}>
+            {props.c4? 'Menos' : 'Ver Mais'}
+            {props.c4? 
+              <i className="material-icons">keyboard_arrow_up</i> :
+              <i className="material-icons">keyboard_arrow_down</i>
+            }
+          </a>
+        </Card>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
-export default Adm;
+const mapStateToProps = state => ({c1: state.Card.c1, c2: state.Card.c2, c3: state.Card.c3, c4: state.Card.c4});
+const mapDispatchToProps = dispatch => bindActionCreators({changeC1, changeC2, changeC3, changeC4}, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Adm);

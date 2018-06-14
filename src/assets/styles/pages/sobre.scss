@@ -11,24 +11,11 @@
     text-align: center;
   }
 
-  #nos {
-    #nos-children {
-      .fadeOut {
-        opacity: 0;
-        width: 0;
-        height: 0;
-        transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s;
-      }
-
-      .fadeIn {
-        opacity: 1;
-        width: auto;
-        height: auto;
-        transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
-      }
-    }
-
+  #equipe {
     #card {
+      padding-left: 20px;
+      text-align: center;
+
       .box-card {
         border-radius: 0px;
         border-right: 1px dashed $azul_cinza;
@@ -70,6 +57,22 @@
             vertical-align: -8px;
           }
         }
+      }
+    }
+
+    #equipe-children {
+      .fadeOut {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s;
+      }
+
+      .fadeIn {
+        opacity: 1;
+        width: auto;
+        height: auto;
+        transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
       }
     }
   }

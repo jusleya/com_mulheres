@@ -1,45 +1,43 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 
-//Components
-import Card     from './Card';
+//Componentes
+import Card from './CardComponent';
 
-//Images
-import Jaine from '../../assets/image/sobre/nos/jaine.jpg';
-import Natalia from '../../assets/image/sobre/nos/natalia.jpg';
+//Actions
+import {changeC5} from '../../store/sobre/action';
+import {changeC6} from '../../store/sobre/action';
 
-/*Icones
-import {
-  FacebookBoxIcon,
-  LinkedinBoxIcon,
-  InstagramIcon,
-  TwitterBoxIcon
-} from 'mdi-react';*/
+const Colab = (props) => {
+  return (
+    <div className="columns is-centered">
+      <div className="column"></div>
+      <Card image={props.image5} name={props.name5} funcao={props.funcao5}>
+        <a onClick={props.changeC5}>
+          {props.c5? 'Menos' : 'Ver Mais'}
+          {props.c5? 
+            <i className="material-icons">keyboard_arrow_up</i> :
+            <i className="material-icons">keyboard_arrow_down</i>
+          }
+        </a>
+      </Card>
 
-class Colab extends React.Component {
-  state = {
-    divVerMais: '',
-    isOcultar: ''
-  };
-
-  setDivVerMais = (verMais) => {
-    this.setState({divVerMais: verMais, isOcultar: false});
-  }
-
-  render() {
-    var styleList = this.state.divVerMais ? 'fadeIn' : 'fadeOut';
-
-    return (
-      <div id="nos-children">
-        <div className="columns is-centered">
-          <Card image={Jaine} name="Jaine Conceição" funcao="Colaboradora" verMais={this.setDivVerMais} descricao="Descrição de Jaine" isOcultar={this.state.isOcultar}/>
-          <Card image={Natalia} name="Natália Guimarães" funcao="Coladoradora" verMais={this.setDivVerMais} descricao="Descrição de Natalia" isOcultar={this.state.isOcultar}/>
-        </div>
-        <div className={styleList}>
-          {this.state.divVerMais}
-        </div>
-      </div>
-    );
-  }
+      <Card image={props.image6} name={props.name6} funcao={props.funcao6}>
+        <a onClick={props.changeC6}>
+          {props.c6? 'Menos' : 'Ver Mais'}
+          {props.c6? 
+            <i className="material-icons">keyboard_arrow_up</i> :
+            <i className="material-icons">keyboard_arrow_down</i>
+          }
+        </a>
+      </Card>
+      <div className="column"></div>
+    </div>
+  );
 }
 
-export default Colab;
+const mapStateToProps = state => ({c5: state.Card.c5, c6: state.Card.c6});
+const mapDispatchToProps = dispatch => bindActionCreators({changeC5, changeC6}, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Colab);

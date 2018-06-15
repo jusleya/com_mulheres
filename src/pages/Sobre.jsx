@@ -1,11 +1,11 @@
 import React from 'react';
 
 //Components
-import Grupo from '../components/sobre/Grupo';
+import Equipe from '../components/sobre/Equipe';
+import Grupo  from '../components/sobre/Grupo';
 
 //CSS
 import '../assets/styles/pages/sobre.css';
-import Equipe from '../components/sobre/Equipe';
 
 const Sobre = () => (
   <div id="sobre">

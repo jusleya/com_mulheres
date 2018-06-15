@@ -10,6 +10,9 @@ import {
 } from 'bloomer';
 import { NavLink } from 'react-router-dom';
 
+//Imagens
+import logo from '../assets/image/logo.png';
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -31,8 +34,8 @@ class Header extends Component {
           <Container>
             <NavbarBrand>
               <NavbarItem>
-                <NavLink className="navbar-item" to='/'>
-                  <img src="" alt="" />
+                <NavLink className="navbar-item is-centered" to='/'>
+                  <img src={logo} alt="" />
                 </NavLink>
               </NavbarItem>
               <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />

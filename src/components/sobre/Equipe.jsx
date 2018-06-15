@@ -12,11 +12,14 @@ import Veronica from '../../assets/image/sobre/nos/veronica.jpg';
 import Jaine from '../../assets/image/sobre/nos/jaine.jpg';
 import Natalia from '../../assets/image/sobre/nos/natalia.jpg';
 
+//CSS
+import '../../assets/styles/components/sobre/equipe.css';
+
 class Equipe extends React.Component {
   render(){
     return (
       <div id="equipe">
-        <div className="container">
+        <div className="container is-centered">
           <p className="titulo">
             Nós
           </p>

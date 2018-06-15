@@ -4,85 +4,18 @@
   padding-bottom: 20px;
   text-align: center; }
 
-#sobre #equipe #card {
-  padding-left: 20px;
-  text-align: center; }
-  #sobre #equipe #card .box-card {
-    border-radius: 0px;
-    border: 1px dashed #727f8c;
-    max-width: 280px; }
-  #sobre #equipe #card .funcao {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    text-align: center; }
-  #sobre #equipe #card .imagem {
-    padding-top: 12px;
-    max-height: 320px; }
-  #sobre #equipe #card .name {
-    color: #2e4459;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    text-align: center; }
-  #sobre #equipe #card .ver-mais {
-    text-align: center;
-    padding-top: 12px; }
-    #sobre #equipe #card .ver-mais a {
-      color: #343a40;
-      font-family: "Montserrat", sans-serif;
-      font-size: 16px; }
-      #sobre #equipe #card .ver-mais a:hover {
-        color: #486a8c; }
-      #sobre #equipe #card .ver-mais a i {
-        vertical-align: -8px; }
-
-#sobre #equipe #equipe-children .box-descricao {
-  border-radius: 0px;
-  text-align: center; }
-
-#sobre #equipe #equipe-children .descricao {
+#sobre #grupo .texto {
   font-family: "Montserrat", sans-serif;
-  padding: 12px;
   text-align: justify; }
 
-#sobre #equipe #equipe-children .fadeOut {
-  opacity: 0;
-  width: 0;
-  height: 0;
-  transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s; }
-
-#sobre #equipe #equipe-children .fadeIn {
-  opacity: 1;
-  width: auto;
-  height: auto;
-  transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s; }
-
-#sobre #equipe #equipe-children .icon {
-  fill: #2e4459 !important;
-  height: 32px;
-  margin-left: 12px;
-  width: 32px;
-  -webkit-transition: 0.2s ease-in;
-  -moz-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in; }
-
-@media (min-width: 769px) and (max-width: 977px) {
-  #sobre #nos #card {
-    text-align: center; }
-    #sobre #nos #card .box-card {
-      max-height: 300px; }
-    #sobre #nos #card .funcao {
-      font-size: 13px; }
-    #sobre #nos #card .imagem {
-      max-height: 190px; }
-    #sobre #nos #card .name {
-      font-size: 14px; }
-    #sobre #nos #card .ver-mais a {
-      font-size: 12px; } }
-
-@media (max-width: 768px) {
-  #sobre #nos #card {
-    text-align: center;
-    padding-right: 0px; }
-    #sobre #nos #card .box-card {
-      margin: 0 auto; } }
+#sobre #grupo .icone {
+  text-align: center; }
+  #sobre #grupo .icone .icon {
+    fill: #2e4459 !important;
+    height: 32px;
+    margin-left: 12px;
+    width: 32px;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in; }

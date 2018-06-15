@@ -10,80 +10,13 @@
     padding-bottom: 20px;
     text-align: center;
   }
-
-  #equipe {
-    #card {
-      padding-left: 20px;
-      text-align: center;
-
-      .box-card {
-        border-radius: 0px;
-        border: 1px dashed $azul_cinza;
-        max-width: 280px;
-      }
-
-      .funcao {
-        font-family: $family-second;
-        font-size: 18px;
-        text-align: center;
-      }
-
-      .imagem {
-        padding-top: 12px ;
-        max-height: 320px;
-      }
-
-      .name {
-        color: $azul_escuro;
-        font-family: $family-second;
-        font-size: 20px;
-        text-align: center;
-      }
-
-      .ver-mais {
-        text-align: center;
-        padding-top: 12px;
-        // min-height: 100px;
-        a {
-          color: $preto;
-          font-family: $family-second;
-          font-size: 16px;
-          &:hover {
-            color: $azul_claro;
-          }
-          i {
-            vertical-align: -8px;
-          }
-        }
-      }
+  #grupo {
+    .texto {
+      font-family: $family-second;
+      text-align: justify;
     }
-
-    #equipe-children {
-      .box-descricao {
-        border-radius: 0px;
-        text-align: center;
-      }
-
-      .descricao {
-        font-family: $family-second;
-        padding: 12px;
-        text-align: justify;
-      }
-
-      .fadeOut {
-        opacity: 0;
-        width: 0;
-        height: 0;
-        transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s;
-      }
-
-      .fadeIn {
-        opacity: 1;
-        width: auto;
-        height: auto;
-        transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
-      }
-
+    .icone {
+      text-align: center;
       .icon {
         fill: $azul_escuro !important;
         height: 32px;
@@ -93,53 +26,6 @@
         -moz-transition: 0.2s ease-in;
         -o-transition: 0.2s ease-in;
         transition: 0.2s ease-in;
-      }
-    }
-  }
-}
-
-// Configuração dos cards
-@media (min-width: 769px) and (max-width: 977px) {
-  #sobre {
-    #nos {
-      #card {
-        text-align: center;
-        .box-card {
-          max-height: 300px;
-        }
-        
-        .funcao {
-          font-size: 13px;
-        }
-
-        .imagem {
-          max-height: 190px;
-        }
-  
-        .name {
-          font-size: 14px;
-        }
-
-        .ver-mais {
-          a {
-            font-size: 12px;
-          }
-        }
-      }
-    }
-  }
-}
-
-// Configuração dos cards
-@media (max-width: 768px) {
-  #sobre {
-    #nos {
-      #card {
-        text-align: center;
-        padding-right: 0px;
-        .box-card {
-          margin: 0 auto;
-        }
       }
     }
   }

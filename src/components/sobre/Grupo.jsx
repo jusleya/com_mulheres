@@ -1,41 +1,64 @@
 import React from 'react';
 
+//Icones
+import { EmailIcon, FacebookBoxIcon, InstagramIcon } from 'mdi-react';
+
+//Imagens
+import comMulheres from '../../assets/image/sobre/nossoGrupo/comMulheres.png';
+import pc          from '../../assets/image/sobre/nossoGrupo/pc-preto.png';
+
 const hr = {border:"1px dashed rgb(189, 203, 216)"};
 
 const Grupo = () => (
   <div id="grupo">
     <div className="container">
-      <p className="titulo">
-        Nosso grupo
-      </p>
       <div className="columns is-centered">
-        <div className="column is-centered">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nam vulputate tristique vehicula. Curabitur egestas ultrices 
-            scelerisque. Donec id malesuada ligula, eget vestibulum leo. 
-            Curabitur et mattis turpis. Vestibulum efficitur, nunc vel 
-            porta volutpat, quam augue lacinia tellus, ut tincidunt mauris 
-            augue vitae massa. Morbi aliquam, turpis eget sollicitudin 
-            malesuada, neque sapien ultricies est, sit amet auctor leo mi 
-            ac nisi. Aenean convallis sapien nisi, nec bibendum odio iaculis
-            vitae. Praesent volutpat ultricies finibus. Integer turpis nunc, 
-            aliquam et lobortis id, suscipit vitae augue. Proin mollis euismod 
-            mollis. Fusce viverra nisl augue, eu malesuada eros varius in. 
-            Integer non porttitor massa. Praesent sit amet risus massa. 
-            Donec vel leo quis tortor aliquam mollis eget in nisl. 
-            Mauris felis turpis, commodo in sapien eu, finibus consequat 
-            odio. Quisque et interdum ex.
-            Fusce quam erat, accumsan ut tellus in, mattis ultrices lacus. 
-            Nulla aliquet, nisl vestibulum lobortis ullamcorper, mauris metus 
-            sollicitudin diam, pellentesque posuere quam dolor vitae metus. 
-            Phasellus vel metus enim. Etiam pellentesque imperdiet mauris, et 
-            porttitor dui dapibus sit amet. Vestibulum sed ullamcorper nunc. 
-            Suspendisse potenti. Proin cursus lorem nibh. Aliquam cursus nisl 
-            lorem, sed mattis erat feugiat id. Ut eleifend, lectus sed semper 
-            cursus, augue urna auctor urna, quis lacinia mauris eros at turpis. 
-            Pellentesque laoreet aliquet maximus.
+        <div className="column is-6">
+          <p className="titulo">
+            Nosso grupo
           </p>
+          <p className="texto">
+          Tudo começou em um dia que três meninas da área de computação se juntaram e começaram a conversar sobre a realidade que vivenciavam. Elas se perguntavam: Por que somos poucas? Por que nossa área é por maioria homem?
+          <br/>
+          Assim, surgiu o “Computação com Mulheres”, um grupo que sonha em ter cada vez mais mulheres ocupando postos que alguns intitulam ser de homens. Mas, sem a necessidade de exclusão dos outros. Estamos aqui para incentivar e ajudar a quem precisa. Ajudar a quem estiver em dúvida do que fazer, ou que está em dúvida nas matérias.
+          <br/>
+          Estamos aqui a disposição daqueles que precisam, independente de raça, gênero, ou orientação sexual. Estamos aqui para ajudar sempre que precisar.
+          </p>
+        </div>
+        <div className="column is-4">
+          <img src={comMulheres} alt=""/>
+        </div>
+      </div>
+      <div className="columns is-centered">
+        <div className="column is-3">
+          <img src={pc} alt=""/>
+        </div>
+        <div className="column is-6">
+          <p className="titulo">
+            Redes sociais
+          </p>
+          <p className="texto">
+            As páginas do nosso projeto estão repletas de informações de diversos assuntos ligados à tecnologias e outras áreas concorrentes, além de sempre mostrar inspirações de mulheres que foram/são importantes para nossa área.
+            <br/>
+            É por lá também que compartilhamos as nossas paixões específicas da área e algumas dicas, por lá conseguimos deixar vocês mais próximos da gente.
+          </p>
+          <div className="icone">
+            <span>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <InstagramIcon className="icon" />
+              </a>
+            </span>
+            <span>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <FacebookBoxIcon className="icon"/>
+              </a>
+            </span>
+            <span>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <EmailIcon className="icon"/>
+              </a>
+            </span>
+          </div>
         </div>
       </div>
       <hr style={hr} />

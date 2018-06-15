@@ -11,27 +11,42 @@ class Descricao extends React.Component {
         <p className="descricao">{props.descricao}</p>
         <span>
           <a href={props.linkedin} target="_blank" rel="noopener noreferrer">
+            { props.linkedin ?
             <LinkedinBoxIcon className="icon" />
+            : null
+            }
           </a>
         </span>
         <span>
           <a href={props.instagram} target="_blank" rel="noopener noreferrer">
-            <InstagramIcon className="icon" />
+            { props.instagram ?
+              <InstagramIcon className="icon" />
+              : null
+            }
           </a>
         </span>
         <span>
           <a href={props.twitter} target="_blank" rel="noopener noreferrer">
-            <TwitterBoxIcon className="icon" />
+            { props.twitter ?
+              <TwitterBoxIcon className="icon" />
+              : null
+            }
           </a>
         </span>
         <span>
           <a href={props.facebook} target="_blank" rel="noopener noreferrer">
-            <FacebookBoxIcon className="icon"/>
+            { props.facebook ?
+              <FacebookBoxIcon className="icon"/>
+              : null
+            }
           </a>
         </span>
         <span>
-          <a href={props.contato} target="_blank" rel="noopener noreferrer">
-            <EmailIcon className="icon"/>
+          <a href={props.email} target="_blank" rel="noopener noreferrer">
+            { props.email ?
+              <EmailIcon className="icon"/>
+              : null
+            }
           </a>
         </span>
       </div>

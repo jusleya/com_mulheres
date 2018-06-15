@@ -19,6 +19,11 @@ class Colab extends React.Component {
     return (
       <div id="equipe-children">
         <div className="columns is-centered">
+          {props.c4 === false && props.c5 === false && props.c6 === false?
+            <div className="column is-1"></div>
+            : null
+          }
+          {/*Veronica*/}
           <Card image={props.image4} name={props.name4} funcao={props.funcao4}>
             <a onClick={props.changeC4}>
               {props.c4? 'Menos' : 'Ver Mais'}
@@ -39,6 +44,7 @@ class Colab extends React.Component {
                     instagram=""
                     twitter=""
                     facebook=""
+                    email=""
                   />
                 </div>
               </div>
@@ -46,6 +52,7 @@ class Colab extends React.Component {
             : null
           }
 
+          {/*Jaine*/}
           <Card image={props.image5} name={props.name5} funcao={props.funcao5}>
             <a onClick={props.changeC5}>
               {props.c5? 'Menos' : 'Ver Mais'}
@@ -64,13 +71,15 @@ class Colab extends React.Component {
                     descricao={`Graduanda em Ciência da Computação na Universidade Federal de Sergipe e pesquisadora na área de Metodologia e Técnicas da Computação, Linguagens de Programação e Engenharia de Software. Apaixonada por programação, desafios, jogos de RPG e séries de TV.`}
                     linkedin="https://www.linkedin.com/in/jaine-concei%C3%A7%C3%A3o-02b531138/"
                     instagram="https://www.instagram.com/jaiconceicao/"
+                    email="mailto:jainecs@dcomp.ufs.br"
                   />
                 </div>
               </div>
             </div>
             : null
           }
-
+          
+          {/*Natalia*/}
           <Card image={props.image6} name={props.name6} funcao={props.funcao6}>
             <a onClick={props.changeC6}>
               {props.c6? 'Menos' : 'Ver Mais'}
@@ -87,10 +96,10 @@ class Colab extends React.Component {
                 <div className="box-descricao">
                   <Descricao
                     descricao={`Estudante de Ciência da Computação na Universidade Federal de Sergipe. Atualmente membro bolsista da Comissão Organizadora dos Hackathons UFS. Entusiasta na área de front-end, migrando o para desenvolvimento mobile com linguagens nativas. Nas horas vagas, maratonista profissional de séries da Netflix, alternando com filmes em preto e branco, e documentários. Apaixonada por livros, HQ's, kickboxing e Engenharia de Software.`}
-                    linkedin=""
-                    instagram=""
-                    twitter=""
-                    facebook=""
+                    linkedin="https://www.linkedin.com/in/natalia-guimar%C3%A3es-b2668347/"
+                    instagram="https://www.instagram.com/guimaraesnaty/"
+                    facebook="https://www.facebook.com/natalia.souza.127201"
+                    email="mailto:nataliasouzaguimaraes@gmail.com"
                   />
                 </div>
               </div>

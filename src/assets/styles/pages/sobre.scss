@@ -18,8 +18,7 @@
 
       .box-card {
         border-radius: 0px;
-        border-right: 1px dashed $azul_cinza;
-        border-bottom: 1px dashed $azul_cinza;
+        border: 1px dashed $azul_cinza;
         max-width: 280px;
       }
 
@@ -27,10 +26,10 @@
         font-family: $family-second;
         font-size: 18px;
         text-align: center;
-        // min-height: 50px;
       }
 
       .imagem {
+        padding-top: 12px ;
         max-height: 320px;
       }
 
@@ -38,7 +37,6 @@
         color: $azul_escuro;
         font-family: $family-second;
         font-size: 20px;
-        // min-height: 100px;
         text-align: center;
       }
 
@@ -49,7 +47,7 @@
         a {
           color: $preto;
           font-family: $family-second;
-          font-size: 15px;
+          font-size: 16px;
           &:hover {
             color: $azul_claro;
           }
@@ -62,12 +60,7 @@
 
     #equipe-children {
       .box-descricao {
-        // background: #e7eaee;
         border-radius: 0px;
-        border-left: 1px dashed $azul_cinza;
-        // border-right: 1px dashed $azul_cinza;
-        border-bottom: 1px dashed $azul_cinza;
-        margin-bottom: 24px;
         text-align: center;
       }
 
@@ -96,10 +89,10 @@
         height: 32px;
         margin-left: 12px;
         width: 32px;
-        // -webkit-transition: 0.2s ease-in;
-        // -moz-transition: 0.2s ease-in;
-        // -o-transition: 0.2s ease-in;
-        // transition: 0.2s ease-in;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        transition: 0.2s ease-in;
       }
     }
   }

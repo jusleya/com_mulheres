@@ -2,7 +2,7 @@ import React from 'react';
 
 //Componentes
 import Adm   from './Administracao';
-import Colab from './Colaboradores';
+import Colab from './AdmColab';
 
 //Images
 import Alana from '../../assets/image/sobre/nos/alana.jpg';
@@ -17,14 +17,17 @@ class Equipe extends React.Component {
     return (
       <div id="equipe">
         <div className="container">
+          <p className="titulo">
+            Nós
+          </p>
           <Adm
             image1={Alana} name1="Alana Lucia" funcao1="Administração"
             image2={Jusley} name2="Jusley Arley" funcao2="Administração"
             image3={Sthe} name3="Sthefane Soares" funcao3="Administração"
-            image4={Veronica} name4="Verônica Nascimento" funcao4="Administração"
           />
-
+          <br/>
           <Colab
+            image4={Veronica} name4="Verônica Nascimento" funcao4="Administração"
             image5={Jaine} name5="Jaine Conceição" funcao5="Colaboradora"
             image6={Natalia} name6="Natália Guimarães" funcao6="Colaboradora"
           />

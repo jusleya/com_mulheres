@@ -13,10 +13,7 @@ const ContatoComponent = () => (
       img={nos}
       title="Parceiros"
     >
-      Queremos juntar pessoas/grupos que tenha objetivos
-      semelhantes ao nosso para nos tornarmos uma
-      comunidade mais forte. Quer ser um parceiro ou ser
-      um colaborador com nossa página?
+      Queremos juntar pessoas/grupos que tenham objetivos semelhantes ao nosso para nos tornarmos uma comunidade mais forte. Quer ser um parceiro ou ser um colaborador com nossa página?
       <br/>
       <br/>
       <div align="center"><Button link="/contato">Entre em contato<i className="material-icons">keyboard_arrow_right</i></Button></div>

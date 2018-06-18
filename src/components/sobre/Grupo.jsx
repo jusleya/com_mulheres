@@ -13,7 +13,7 @@ const Grupo = () => (
   <div id="grupo">
     <div className="container">
       <div className="columns is-centered">
-        <div className="column is-6">
+        <div className="column is-5 espaco">
           <p className="titulo">
             Nosso grupo
           </p>
@@ -29,11 +29,12 @@ const Grupo = () => (
           <img src={comMulheres} alt=""/>
         </div>
       </div>
+      <br/>
       <div className="columns is-centered">
         <div className="column is-3">
           <img src={pc} alt=""/>
         </div>
-        <div className="column is-6">
+        <div className="column is-5">
           <p className="titulo">
             Redes sociais
           </p>
@@ -42,6 +43,7 @@ const Grupo = () => (
             <br/>
             É por lá também que compartilhamos as nossas paixões específicas da área e algumas dicas, por lá conseguimos deixar vocês mais próximos da gente.
           </p>
+          <br/>
           <div className="icone">
             <span>
               <a href="" target="_blank" rel="noopener noreferrer">

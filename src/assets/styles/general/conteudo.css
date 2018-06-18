@@ -1,5 +1,11 @@
+#conteudo .espaco-left {
+  padding-left: 24px; }
+
+#conteudo .espaco-right {
+  padding-right: 24px; }
+
 #conteudo .imagem {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12); }
+  max-height: 440px; }
 
 #conteudo .text {
   font-family: "Montserrat", sans-serif;

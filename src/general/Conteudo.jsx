@@ -24,7 +24,7 @@ const Conteudo = (props) => {
         <div className="column is-6">
           <Image img={props.img} />
         </div>
-        <div className="column is-5">
+        <div className="column is-5 espaco-left">
           <Text title={props.title}>{props.children}</Text>
         </div>
       </div>
@@ -32,7 +32,7 @@ const Conteudo = (props) => {
   ) : (
     <div id="conteudo">
       <div className="columns is-centered">
-        <div className="column is-5">
+        <div className="column is-5 espaco-right">
           <Text title={props.title}>{props.children}</Text>
         </div>
         <div className="column is-6">

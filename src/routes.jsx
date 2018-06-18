@@ -6,7 +6,8 @@ import Header from './general/Header';
 import Footer from './general/Footer';
 
 //Pages
-import Home   from './pages/Home';
+import Contato from './pages/Contato';
+import Home    from './pages/Home';
 import Sobre   from './pages/Sobre';
 
 const Main = () => (
@@ -16,6 +17,7 @@ const Main = () => (
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/sobre' component={Sobre} />
+        <Route exact path='/contato' component={Contato} />
       </Switch>
       <Footer />
     </main>

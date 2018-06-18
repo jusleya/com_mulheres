@@ -1,0 +1,23 @@
+#contato .box-contato {
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12); }
+
+#contato .button-espaco {
+  padding-bottom: 20px;
+  text-align: center; }
+
+#contato .espaco {
+  padding-right: 20px;
+  padding-bottom: 20px; }
+
+#contato .label {
+  font-size: 20px; }
+
+#contato .titulo {
+  color: #486a8c;
+  font-size: 40px;
+  text-align: center; }
+
+#contato .top {
+  padding-top: 20px; }

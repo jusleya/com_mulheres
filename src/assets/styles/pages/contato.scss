@@ -1,0 +1,36 @@
+//----------------------
+// Variables
+//----------------------
+@import '../variables.scss';
+
+#contato {
+  .box-contato {
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .button-espaco {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .espaco {
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .label {
+    font-size: 20px;
+  }
+
+  .titulo {
+    color: $azul_claro;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .top {
+    padding-top: 20px;
+  }
+}

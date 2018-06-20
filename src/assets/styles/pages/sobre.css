@@ -22,3 +22,6 @@
     -moz-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in; }
+
+#sobre #parceiros .espaco {
+  margin-right: 20px; }

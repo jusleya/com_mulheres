@@ -15,6 +15,8 @@ import Natalia from '../../assets/image/sobre/nos/natalia.jpg';
 //CSS
 import '../../assets/styles/components/sobre/equipe.css';
 
+const hr = {border:"1px dashed rgb(189, 203, 216)"};
+
 class Equipe extends React.Component {
   render(){
     return (
@@ -34,6 +36,7 @@ class Equipe extends React.Component {
             image5={Jaine} name5="Jaine Conceição" funcao5="Colaboradora"
             image6={Natalia} name6="Natália Guimarães" funcao6="Colaboradora"
           />
+          <hr style={hr} />
         </div>
       </div>
     );

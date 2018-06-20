@@ -1,15 +1,32 @@
+#contato a {
+  color: #486a8c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; }
+  #contato a:hover {
+    color: #343a40; }
+
 #contato .box-contato {
-  border-radius: 4px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12); }
+  border-radius: 0px;
+  border: 2px dashed #727f8c; }
+
+#contato .box-texto {
+  border-radius: 0px;
+  border: 2px dashed #727f8c;
+  max-width: 660px; }
+
+#contato .box-posicao {
+  padding-top: 70px; }
 
 #contato .button-espaco {
   padding-bottom: 20px;
   text-align: center; }
 
 #contato .espaco {
-  padding-right: 20px;
+  padding-right: 40px;
   padding-bottom: 20px; }
+
+#contato .imagem {
+  text-align: right; }
 
 #contato .label {
   font-size: 20px; }
@@ -17,7 +34,18 @@
 #contato .titulo {
   color: #486a8c;
   font-size: 40px;
+  padding-bottom: 20px;
   text-align: center; }
+
+#contato .texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 16px;
+  text-align: justify; }
 
 #contato .top {
   padding-top: 20px; }
+
+@media (max-width: 1279px) {
+  #contato .espaco {
+    padding-left: 40px; } }

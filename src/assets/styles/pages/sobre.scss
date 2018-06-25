@@ -36,5 +36,15 @@
     .espaco {
       margin-right: 20px;
     }
+    .center-div {
+      display: flex;
+      align-items: center; //centraliza horizontalmente
+      justify-content: center; //cetraliza verticalmente
+    }
+    .center-item {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
   }
 }

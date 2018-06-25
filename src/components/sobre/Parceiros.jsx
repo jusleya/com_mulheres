@@ -16,17 +16,17 @@ class Parceiros extends React.Component {
           <p className="titulo">
             Parceiros
           </p>
-          <div className="columns is-centered">
+          <div className="columns is-centered center-div">
             <div className="column is-1">
             </div>
-            <div className="column is-3 espaco">
-              <img src={gdg} alt=""/>
+            <div className="column is-3 espaco center-item">
+              <img className="imagem" src={gdg} alt=""/>
             </div>
-            <div className="column is-3 espaco">
-              <img src={wtm} alt=""/>
+            <div className="column is-3 espaco center-item">
+              <img className="imagem" src={wtm} alt=""/>
             </div>
-            <div className="column is-2">
-              <img src={dcomp} alt=""/>
+            <div className="column is-2 center-item">
+              <img className="imagem" src={dcomp} alt=""/>
             </div>
             <div className="column is-1">
             </div>

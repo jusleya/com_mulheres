@@ -25,3 +25,13 @@
 
 #sobre #parceiros .espaco {
   margin-right: 20px; }
+
+#sobre #parceiros .center-div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#sobre #parceiros .center-item {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }

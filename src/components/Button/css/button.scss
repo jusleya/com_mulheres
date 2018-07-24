@@ -1,0 +1,41 @@
+//----------------------
+// Variables
+//----------------------
+ @import '../../../assets/styles/variables.scss';
+
+.button-leaked-active {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2px;
+  color: $azul_cinza;
+  font-family: $family-primary;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 3px 5px 5px 5px;
+  min-width: 138px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+
+  i {
+    vertical-align: -6px;
+  }
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.button-leaked-disable {
+  border: 2px solid #a1a1a1;
+  border-radius: 2px;
+  color: #a1a1a1;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 3px 10px 5px 10px;
+  min-width: 138px;
+}

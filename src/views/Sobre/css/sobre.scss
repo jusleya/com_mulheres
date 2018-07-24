@@ -1,0 +1,50 @@
+//----------------------
+// Variables
+//----------------------
+ @import '../../../assets/styles/variables.scss';
+
+#sobre {
+  .titulo {
+    color: $azul_claro;
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  #grupo {
+    .espaco {
+      padding-right: 24px;
+    }
+    .texto {
+      font-family: $family-second;
+      text-align: justify;
+    }
+    .icone {
+      text-align: center;
+      .icon {
+        fill: $azul_escuro !important;
+        height: 32px;
+        margin-left: 12px;
+        width: 32px;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        transition: 0.2s ease-in;
+      }
+    }
+  }
+  #parceiros {
+    .espaco {
+      margin-right: 20px;
+    }
+    .center-div {
+      display: flex;
+      align-items: center; //centraliza horizontalmente
+      justify-content: center; //cetraliza verticalmente
+    }
+    .center-item {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}

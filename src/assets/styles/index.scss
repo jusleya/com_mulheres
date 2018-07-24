@@ -24,9 +24,9 @@ body {
 //----------------------
 // General
 //----------------------
-@import './general/header.scss';
-@import './general/footer.scss';
-@import './general/button.scss';
+@import '../../components/Header/css/header.scss';
+@import '../../components/Footer/css/footer.scss';
+@import '../../components/Button/css/button.scss';
 
 //----------------------
 // Views

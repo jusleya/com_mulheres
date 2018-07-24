@@ -1,0 +1,74 @@
+//----------------------
+// Variables
+//----------------------
+ @import '../../../assets/styles/variables.scss';
+
+#contato {
+  a {
+    color: $azul_claro;
+    font-family: $family-second;
+    font-size: 16px;
+    &:hover {
+      color: $preto;
+    }
+  }
+
+  .box-contato {
+    border-radius: 0px;
+    border: 2px dashed $azul_cinza;
+  }
+
+  .box-texto {
+    border-radius: 0px;
+    border: 2px dashed $azul_cinza;
+    max-width: 660px;
+  }
+
+  .box-posicao {
+    padding-top: 70px;
+  }
+
+  .button-espaco {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .espaco {
+    padding-right: 40px;
+    padding-bottom: 20px;
+  }
+
+  .imagem {
+    text-align: right;
+  }
+
+  .label {
+    font-size: 20px;
+  }
+
+  .titulo {
+    color: $azul_claro;
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .texto {
+    font-family: $family-second;
+    font-size: 16px;
+    padding: 16px;
+    text-align: justify;
+  }
+
+  .top {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1279px) {
+  #contato {
+    .espaco {
+      padding-left: 40px;
+    }
+  }
+}

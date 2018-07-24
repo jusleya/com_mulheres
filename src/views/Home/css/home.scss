@@ -1,0 +1,32 @@
+//----------------------
+// Variables
+//----------------------
+ @import '../../../assets/styles/variables.scss';
+
+#home {
+  #banner {
+    .bg {
+      height: 330px;
+    }
+    .titulo {
+      color: $azul_branco;
+      font-size: 60px;
+      font-weight: 300 !important;
+      letter-spacing: -0.5px;
+      line-height: 1.17;
+      padding-top: 80px;
+      text-align: center;
+      text-shadow: #000 -1px 1px 1px;
+    }
+  }
+}
+
+@media (min-width: 1087px) {
+  #home {
+    #banner {
+      .bg {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

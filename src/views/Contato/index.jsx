@@ -17,7 +17,7 @@ class Contato extends React.Component {
               <div className="column is-8">
                 <p className="titulo">Entre em contato</p>
                 <div className="box-contato">
-                  <form method="post" action="enviarEmail.php">
+                  <form action="enviarEmail.php" method="post" id="enviarEmail" enctype="multipart/form-data">
                     <div className="field is-horizontal espaco top">
                       <div className="field-label is-normal">
                         <label className="label">Nome</label>
@@ -26,6 +26,7 @@ class Contato extends React.Component {
                         <div className="field">
                           <p className="control">
                             <input
+                              required
                               name="name"
                               className="input"
                               type="text"
@@ -44,6 +45,7 @@ class Contato extends React.Component {
                         <div className="field">
                           <p className="control">
                             <input
+                              required
                               name="email"
                               className="input"
                               type="email"
@@ -62,6 +64,7 @@ class Contato extends React.Component {
                         <div className="field">
                           <p className="control">
                             <input
+                              required
                               name="subject"
                               className="input"
                               type="text"
@@ -80,6 +83,7 @@ class Contato extends React.Component {
                         <div className="field">
                           <p className="control">
                             <textarea
+                              required
                               name="message"
                               className="textarea"
                               placeholder="Mensagem...">

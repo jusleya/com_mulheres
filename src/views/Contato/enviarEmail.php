@@ -1,6 +1,7 @@
 <?php
+echo "QUE que acontecenu?";
 if(isset($_POST['email'])) {
- 
+    echo "TA ENTRANDO";
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "com.mulheres@gmail.com";
     $email_subject = "Contato pelo site";

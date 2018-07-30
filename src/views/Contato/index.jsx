@@ -17,7 +17,7 @@ class Contato extends React.Component {
               <div className="column is-8">
                 <p className="titulo">Entre em contato</p>
                 <div className="box-contato">
-                  <form action="enviarEmail.php" method="post" id="enviarEmail" enctype="multipart/form-data">
+                  <form action="" method="post" id="enviarEmail">
                     <div className="field is-horizontal espaco top">
                       <div className="field-label is-normal">
                         <label className="label">Nome</label>
@@ -46,7 +46,7 @@ class Contato extends React.Component {
                           <p className="control">
                             <input
                               required
-                              name="email"
+                              name="destinatarios"
                               className="input"
                               type="email"
                               placeholder="E-mail"

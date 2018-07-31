@@ -46,7 +46,7 @@ class Contato extends React.Component {
                           <p className="control">
                             <input
                               required
-                              name="destinatarios"
+                              name="remetente"
                               className="input"
                               type="email"
                               placeholder="E-mail"

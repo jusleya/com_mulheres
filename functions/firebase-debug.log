@@ -1,0 +1,29 @@
+[debug] [2018-07-31T16:53:04.527Z] ----------------------------------------------------------------------
+[debug] [2018-07-31T16:53:04.529Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:shell
+[debug] [2018-07-31T16:53:04.529Z] CLI Version:   4.0.0
+[debug] [2018-07-31T16:53:04.529Z] Platform:      darwin
+[debug] [2018-07-31T16:53:04.530Z] Node Version:  v8.9.4
+[debug] [2018-07-31T16:53:04.530Z] Time:          Tue Jul 31 2018 13:53:04 GMT-0300 (-03)
+[debug] [2018-07-31T16:53:04.530Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-31T16:53:04.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-31T16:53:04.539Z] > authorizing via signed-in user
+[debug] [2018-07-31T16:53:04.541Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/contato-commulheres  
+  
+ Tue Jul 31 2018 13:53:04 GMT-0300 (-03)
+[debug] [2018-07-31T16:53:05.325Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T16:53:05.326Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/contato-commulheres/tokens  
+  
+ Tue Jul 31 2018 13:53:05 GMT-0300 (-03)
+[debug] [2018-07-31T16:53:05.987Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T16:53:11.514Z] Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/logs'
+    at Object.fs.mkdirSync (fs.js:885:18)
+    at Object.assertLogsPath (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/emulator/logs.js:65:10)
+    at new Controller (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/cli/controller.js:77:32)
+    at FunctionsEmulator.start (/usr/local/lib/node_modules/firebase-tools/lib/functionsEmulator.js:113:21)
+    at Command.module.exports [as _action] (/usr/local/lib/node_modules/firebase-tools/lib/functionsShellCommandAction.js:18:6)
+    at /usr/local/lib/node_modules/firebase-tools/lib/command.js:200:29
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+[error] 
+[error] Error: An unexpected error has occurred.

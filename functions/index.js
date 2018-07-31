@@ -9,29 +9,44 @@ const functions  = require('firebase-functions');
 const nodemailer = require('nodemailer');
 const cors = require('cors')({origin: true});
 
-let url = "smtps://com.mulheres%40gmail.com:"+encodeURIComponent('C0mMulh3r3s') + "@smtp.gmail.com:465";
-let transporter = nodemailer.createTransport(url);
+require('dotenv').config();
 
 exports.enviarEmail = functions.https.onRequest((req, res) => {
+  
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: '465',
+    secure: 'true',
+    auth: {
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PWD,
+    } 
+  });
+  
   cors(req, res, () => {
-    let to = 'com.mulheres@gmail.com';
-
     let subject = req.body['subject'];
-    let destinatarios = req.body['destinatarios'];
+    let remetente = req.body['remetente'];
     let message = req.body['message'];
 
+
     let email = {
-        from: destinatarios,
-        to: to,
-        subject: subject,
-        text: message
+      from: remetente, // Quem enviou este e-mail
+      to: 'com.mulheres@gmail.com', // Quem receberá`
+      subject: subject,  // Um assunto bacana :-)
+      html: 'Remetente: ' + remetente + ' m:' + message
     };
+
+    console.log(email);
 
     transporter.sendMail(email, (error, info) => {
         if (error) {
-          return console.log(error);
+          res.json({error : 1});
+          return console.error(error);
         }
-        console.log('Mensagem %s enviada: %s', info.messageId, info.response);
+        console.log('Message sent: %s', info.messageId);
+        // Preview only available when sending through an Ethereal account
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+        res.json({msg : 'Mensagem enviada'});
     });
   });
 });

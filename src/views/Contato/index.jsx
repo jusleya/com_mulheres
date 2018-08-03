@@ -26,17 +26,20 @@ class Contato extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post("https://us-central1-contato-commulheres.cloudfunctions.net/enviarEmail", {
+    axios.post("", {
       name: this.state.name,
       email: this.state.email,
       subject: this.state.subject,
       message: this.state.message
     })
     .then((response) => {
-      console.log(response);
+      if(!response.data.error) this.setState({answer: ["Sua mensagem foi enviada com sucesso!"]});
+      else this.setState({answer: ["Errou!2"]});
+      //console.log(response);
     })
     .catch((error) => {
-      console.log(error);
+      this.setState({answer: ["Errou!"]});
+      //console.log(error);
     });
   }
 

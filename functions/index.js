@@ -37,12 +37,12 @@ exports.enviarEmail = functions.https.onRequest((req, res) => {
       html: `<p>Nome: ` + name + `</p><p>Email: ` + email + `</p><p>Assunto: ` + subject + `</p><p>Mensagem: ` + message + `</p>`,
     };
 
-    transporter.sendMail(sendmail, (error, info) => {
+    return transporter.sendMail(sendmail, (error, info) => {
       if(error){
         res.json({error: error});
       }else{
         res.json({success: info.response});
-      };
+      }
     });
   });
 });

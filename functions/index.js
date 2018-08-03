@@ -12,7 +12,7 @@ const cors = require('cors')({origin: true});
 require('dotenv').config();
 
 exports.enviarEmail = functions.https.onRequest((req, res) => {
-  
+
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: '465',
@@ -20,33 +20,29 @@ exports.enviarEmail = functions.https.onRequest((req, res) => {
     auth: {
       user: process.env.MAIL_USER,
       pass: process.env.MAIL_PWD,
-    } 
+    }
   });
-  
+
   cors(req, res, () => {
+    console.log(req);
+    let name = req.body['name'];
+    let email = req.body['email'];
     let subject = req.body['subject'];
-    let remetente = req.body['remetente'];
     let message = req.body['message'];
 
-
-    let email = {
-      from: remetente, // Quem enviou este e-mail
+    let sendmail = {
+      from: email, // Quem enviou este e-mail
       to: 'com.mulheres@gmail.com', // Quem receberá`
       subject: subject,  // Um assunto bacana :-)
-      html: 'Remetente: ' + remetente + ' m:' + message
+      html: `<p>Nome: ` + name + `</p><p>Email: ` + email + `</p><p>Assunto: ` + subject + `</p><p>Mensagem: ` + message + `</p>`,
     };
 
-    console.log(email);
-
-    transporter.sendMail(email, (error, info) => {
-        if (error) {
-          res.json({error : 1});
-          return console.error(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-        res.json({msg : 'Mensagem enviada'});
+    transporter.sendMail(sendmail, (error, info) => {
+      if(error){
+        res.json({error: error});
+      }else{
+        res.json({success: info.response});
+      };
     });
   });
 });

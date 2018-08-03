@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button} from 'bloomer';
+import axios from 'axios';
 
 //Imagem
 import xicara from './image/xicara.png';
@@ -8,6 +9,37 @@ import xicara from './image/xicara.png';
 import './css/contato.css';
 
 class Contato extends React.Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      name: '', email: '', subject: '', message: '',
+      answer: '',
+    }
+  }
+
+  handleFormChange = (e) => {
+    const {name, value} = e.target;
+    this.setState({[name]: value});
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+
+    axios.post("https://us-central1-contato-commulheres.cloudfunctions.net/enviarEmail", {
+      name: this.state.name,
+      email: this.state.email,
+      subject: this.state.subject,
+      message: this.state.message
+    })
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  }
+
   render(){
     return(
       <div id="contato"> 
@@ -17,7 +49,7 @@ class Contato extends React.Component {
               <div className="column is-8">
                 <p className="titulo">Entre em contato</p>
                 <div className="box-contato">
-                  <form action="" method="post" id="enviarEmail">
+                  <form onSubmit={this.handleSubmit}>
                     <div className="field is-horizontal espaco top">
                       <div className="field-label is-normal">
                         <label className="label">Nome</label>
@@ -31,6 +63,8 @@ class Contato extends React.Component {
                               className="input"
                               type="text"
                               placeholder="Nome"
+                              value={this.state.name}
+                              onChange={this.handleFormChange}
                             />
                           </p>
                         </div>
@@ -46,10 +80,12 @@ class Contato extends React.Component {
                           <p className="control">
                             <input
                               required
-                              name="remetente"
+                              name="email"
                               className="input"
                               type="email"
                               placeholder="E-mail"
+                              value={this.state.email}
+                              onChange={this.handleFormChange}
                             />
                           </p>
                         </div>
@@ -69,6 +105,8 @@ class Contato extends React.Component {
                               className="input"
                               type="text"
                               placeholder="Assunto"
+                              value={this.state.subject}
+                              onChange={this.handleFormChange}
                             />
                           </p>
                         </div>
@@ -86,13 +124,15 @@ class Contato extends React.Component {
                               required
                               name="message"
                               className="textarea"
-                              placeholder="Mensagem...">
+                              placeholder="Mensagem..."
+                              value={this.state.textarea}
+                              onChange={this.handleFormChange}>
                             </textarea>
                           </p>
                         </div>
                       </div>
                     </div>
-                    
+                    <p className="answer">{this.state.answer}</p>
                     <div className="field">
                       <div className="control">
                         <div className="button-espaco"><Button type="submit">Enviar</Button></div>

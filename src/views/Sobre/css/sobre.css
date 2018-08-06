@@ -1,27 +1,76 @@
+#sobre .icon {
+  fill: #2e4459 !important;
+  height: 32px;
+  margin-left: 12px;
+  width: 32px;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+
+#sobre .texto {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify; }
+
 #sobre .titulo {
   color: #486a8c;
   font-size: 40px;
   padding-bottom: 20px;
   text-align: center; }
 
-#sobre #grupo .espaco {
+#sobre #grupo .paddingRight {
   padding-right: 24px; }
 
-#sobre #grupo .texto {
-  font-family: "Montserrat", sans-serif;
-  text-align: justify; }
+#sobre #grupo .paddingTop {
+  padding-top: 85px; }
 
-#sobre #grupo .icone {
+#sobre #grupo .icones {
   text-align: center; }
-  #sobre #grupo .icone .icon {
-    fill: #2e4459 !important;
-    height: 32px;
-    margin-left: 12px;
-    width: 32px;
-    -webkit-transition: 0.2s ease-in;
-    -moz-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
-    transition: 0.2s ease-in; }
+
+#sobre #equipe #card {
+  text-align: center; }
+  #sobre #equipe #card .box-card {
+    border-radius: 0px;
+    border: 1px dashed #727f8c;
+    max-width: 280px; }
+  #sobre #equipe #card .funcao {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-align: center; }
+  #sobre #equipe #card .imagem {
+    padding-top: 12px;
+    max-height: 320px; }
+  #sobre #equipe #card .name {
+    color: #2e4459;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center; }
+  #sobre #equipe #card .ver-mais {
+    text-align: center;
+    padding-top: 12px; }
+    #sobre #equipe #card .ver-mais a {
+      color: #343a40;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px; }
+      #sobre #equipe #card .ver-mais a:hover {
+        color: #486a8c; }
+      #sobre #equipe #card .ver-mais a i {
+        vertical-align: -8px; }
+
+#sobre #equipe #equipe-children {
+  text-align: center; }
+  #sobre #equipe #equipe-children .padding {
+    padding: 12px; }
+  #sobre #equipe #equipe-children .fadeOut {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s; }
+  #sobre #equipe #equipe-children .fadeIn {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s; }
 
 #sobre #parceiros .espaco {
   margin-right: 20px; }
@@ -35,3 +84,44 @@
   display: table-cell;
   text-align: center;
   vertical-align: middle; }
+
+@media (max-width: 768px) {
+  #sobre #grupo .align {
+    text-align: center; }
+  #sobre #grupo .imagem {
+    max-width: 350px; }
+  #sobre #grupo .imagemPC {
+    max-width: 250px; }
+  #sobre #grupo .paddingTop {
+    padding-top: 20px; }
+  #sobre #equipe #card {
+    text-align: center;
+    padding-right: 0px; }
+    #sobre #equipe #card .box-card {
+      margin: 0 auto; }
+  #sobre #parceiros {
+    text-align: center; }
+    #sobre #parceiros .imagem {
+      max-width: 220px; }
+    #sobre #parceiros .espaco {
+      margin-right: 0px; }
+    #sobre #parceiros .padding {
+      padding-top: 30px; } }
+
+@media (min-width: 769px) and (max-width: 977px) {
+  #sobre #equipe #card {
+    text-align: center; }
+    #sobre #equipe #card .box-card {
+      max-height: 300px; }
+    #sobre #equipe #card .funcao {
+      font-size: 13px; }
+    #sobre #equipe #card .imagem {
+      max-height: 190px; }
+    #sobre #equipe #card .name {
+      font-size: 14px; }
+    #sobre #equipe #card .ver-mais a {
+      font-size: 12px; }
+  #sobre #equipe #equipe-children {
+    text-align: center; }
+    #sobre #equipe #equipe-children .padding {
+      padding: 12px; } }

@@ -4,34 +4,111 @@
  @import '../../../assets/styles/variables.scss';
 
 #sobre {
+  .icon {
+    fill: $azul_escuro !important;
+    height: 32px;
+    margin-left: 12px;
+    width: 32px;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+  }
+
+  .texto {
+    font-family: $family-second;
+    text-align: justify;
+  }
+
   .titulo {
     color: $azul_claro;
     font-size: 40px;
     padding-bottom: 20px;
     text-align: center;
   }
+
   #grupo {
-    .espaco {
+    .paddingRight {
       padding-right: 24px;
     }
-    .texto {
-      font-family: $family-second;
-      text-align: justify;
+
+    .paddingTop {
+      padding-top: 85px;
     }
-    .icone {
+
+    .icones {
       text-align: center;
-      .icon {
-        fill: $azul_escuro !important;
-        height: 32px;
-        margin-left: 12px;
-        width: 32px;
-        -webkit-transition: 0.2s ease-in;
-        -moz-transition: 0.2s ease-in;
-        -o-transition: 0.2s ease-in;
-        transition: 0.2s ease-in;
+    }
+  }
+
+  #equipe {
+    #card {
+      text-align: center;
+  
+      .box-card {
+        border-radius: 0px;
+        border: 1px dashed $azul_cinza;
+        max-width: 280px;
+      }
+  
+      .funcao {
+        font-family: $family-second;
+        font-size: 18px;
+        text-align: center;
+      }
+  
+      .imagem {
+        padding-top: 12px ;
+        max-height: 320px;
+      }
+  
+      .name {
+        color: $azul_escuro;
+        font-family: $family-second;
+        font-size: 20px;
+        text-align: center;
+      }
+  
+      .ver-mais {
+        text-align: center;
+        padding-top: 12px;
+        a {
+          color: $preto;
+          font-family: $family-second;
+          font-size: 16px;
+          &:hover {
+            color: $azul_claro;
+          }
+          i {
+            vertical-align: -8px;
+          }
+        }
+      }
+    }
+  
+    #equipe-children {
+      text-align: center;
+  
+      .padding {
+        padding: 12px;
+      }
+  
+      .fadeOut {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s;
+      }
+  
+      .fadeIn {
+        opacity: 1;
+        width: auto;
+        height: auto;
+        transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
       }
     }
   }
+
   #parceiros {
     .espaco {
       margin-right: 20px;
@@ -45,6 +122,91 @@
       display: table-cell;
       text-align: center;
       vertical-align: middle;
+    }
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  #sobre {
+    #grupo {
+      .align {
+        text-align: center;
+      }
+
+      .imagem {
+        max-width: 350px;
+      }
+      
+      .imagemPC {
+        max-width: 250px;
+      }
+
+      .paddingTop {
+        padding-top: 20px;
+      }
+    }
+
+    #equipe {
+      #card {
+        text-align: center;
+        padding-right: 0px;
+        .box-card {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    #parceiros {
+      text-align: center;
+      .imagem {
+        max-width: 220px;
+      }
+      .espaco {
+        margin-right: 0px;
+      }
+      .padding {
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
+// Configuração dos cards
+@media (min-width: 769px) and (max-width: 977px) {
+  #sobre {
+    #equipe {
+      #card {
+        text-align: center;
+        .box-card {
+          max-height: 300px;
+        }
+        
+        .funcao {
+          font-size: 13px;
+        }
+
+        .imagem {
+          max-height: 190px;
+        }
+
+        .name {
+          font-size: 14px;
+        }
+
+        .ver-mais {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+      #equipe-children {
+        text-align: center;
+        .padding {
+          padding: 12px;
+        }
+      }
     }
   }
 }

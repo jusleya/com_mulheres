@@ -8,7 +8,7 @@ class Descricao extends React.Component {
     const {...props} = this.props;
     return(
       <div>
-        <p className="descricao">{props.descricao}</p>
+        <p className="texto padding">{props.descricao}</p>
         <span>
           <a href={props.linkedin} target="_blank" rel="noopener noreferrer">
             { props.linkedin ?

@@ -25,11 +25,18 @@ class Colab extends React.Component {
           }
           {/*Veronica*/}
           <Card image={props.image4} name={props.name4} funcao={props.funcao4}>
-            <a onClick={props.changeC4}>
+            <a className="is-hidden-mobile" onClick={props.changeC4}>
               {props.c4? 'Menos' : 'Ver Mais'}
               {props.c4? 
                 <i className="material-icons">keyboard_arrow_left</i> :
                 <i className="material-icons">keyboard_arrow_right</i>
+              }
+            </a>
+            <a className="is-hidden-tablet" onClick={props.changeC4}>
+              {props.c4? 'Menos' : 'Ver Mais'}
+              {props.c4? 
+                <i className="material-icons">keyboard_arrow_up</i> :
+                <i className="material-icons">keyboard_arrow_down</i>
               }
             </a>
           </Card>
@@ -54,11 +61,18 @@ class Colab extends React.Component {
 
           {/*Jaine*/}
           <Card image={props.image5} name={props.name5} funcao={props.funcao5}>
-            <a onClick={props.changeC5}>
+            <a className="is-hidden-mobile" onClick={props.changeC5}>
               {props.c5? 'Menos' : 'Ver Mais'}
               {props.c5? 
                 <i className="material-icons">keyboard_arrow_left</i> :
                 <i className="material-icons">keyboard_arrow_right</i>
+              }
+            </a>
+            <a className="is-hidden-tablet" onClick={props.changeC5}>
+              {props.c5? 'Menos' : 'Ver Mais'}
+              {props.c5? 
+                <i className="material-icons">keyboard_arrow_up</i> :
+                <i className="material-icons">keyboard_arrow_down</i>
               }
             </a>
           </Card>
@@ -81,11 +95,18 @@ class Colab extends React.Component {
           
           {/*Natalia*/}
           <Card image={props.image6} name={props.name6} funcao={props.funcao6}>
-            <a onClick={props.changeC6}>
+            <a className="is-hidden-mobile" onClick={props.changeC6}>
               {props.c6? 'Menos' : 'Ver Mais'}
               {props.c6? 
                 <i className="material-icons">keyboard_arrow_left</i> :
                 <i className="material-icons">keyboard_arrow_right</i>
+              }
+            </a>
+            <a className="is-hidden-tablet" onClick={props.changeC6}>
+              {props.c6? 'Menos' : 'Ver Mais'}
+              {props.c6? 
+                <i className="material-icons">keyboard_arrow_up</i> :
+                <i className="material-icons">keyboard_arrow_down</i>
               }
             </a>
           </Card>

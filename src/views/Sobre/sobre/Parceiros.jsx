@@ -13,19 +13,17 @@ class Parceiros extends React.Component {
     return (
       <div id="parceiros">
         <div className="container is-centered">
-          <p className="titulo">
-            Parceiros
-          </p>
-          <div className="columns is-centered center-div">
+          <p className="titulo">Parceiros</p>
+          <div className="columns v-centered is-centered">
             <div className="column is-1">
             </div>
-            <div className="column is-3 espaco center-item">
+            <div className="column is-3 espaco">
               <img className="imagem" src={gdg} alt=""/>
             </div>
-            <div className="column is-3 espaco center-item">
+            <div className="column is-3 espaco padding">
               <img className="imagem" src={wtm} alt=""/>
             </div>
-            <div className="column is-2 center-item">
+            <div className="column is-2 padding">
               <img className="imagem" src={dcomp} alt=""/>
             </div>
             <div className="column is-1">

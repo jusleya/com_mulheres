@@ -12,9 +12,6 @@ import Veronica from '../image/nos/veronica.jpg';
 import Jaine from '../image/nos/jaine.jpg';
 import Natalia from '../image/nos/natalia.jpg';
 
-//CSS
-import '../css/equipe.css';
-
 const hr = {border:"1px dashed rgb(189, 203, 216)"};
 
 class Equipe extends React.Component {
@@ -22,9 +19,7 @@ class Equipe extends React.Component {
     return (
       <div id="equipe">
         <div className="container is-centered">
-          <p className="titulo">
-            Nós
-          </p>
+          <p className="titulo">Nós</p>
           <Adm
             image1={Alana} name1="Alana Lucia" funcao1="Administração"
             image2={Jusley} name2="Jusley Arley" funcao2="Administração"

@@ -26,6 +26,8 @@ class Contato extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
+    this.setState({answer: [<i className="material-icons icons">loop</i>, " Enviando sua mensagem..."]});
+
     axios.post("", {
       name: this.state.name,
       email: this.state.email,
@@ -33,12 +35,12 @@ class Contato extends React.Component {
       message: this.state.message
     })
     .then((response) => {
-      if(!response.data.error) this.setState({answer: ["Sua mensagem foi enviada com sucesso!"]});
-      else this.setState({answer: ["Errou!2"]});
+      if(!response.data.error) this.setState({answer: [<i className="material-icons icons">check</i>, " Sua mensagem foi enviada com sucesso!"]});
+      else this.setState({answer: [<i className="material-icons icons">clear</i>, " Errou!"]});
       //console.log(response);
     })
     .catch((error) => {
-      this.setState({answer: ["Errou!"]});
+      this.setState({answer: [<i className="material-icons icons">clear</i>, " Errou!"]});
       //console.log(error);
     });
   }

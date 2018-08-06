@@ -6457,25 +6457,25 @@ body {
 #footer {
   background-color: #343a40;
   color: white; }
-  #footer a {
+  #footer .icon {
+    fill: white;
+    margin-left: 12px;
+    width: 32px;
     -webkit-transition: 0.2s ease-in;
     -moz-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in; }
-  #footer a, #footer p {
-    color: white;
-    font-size: 16px; }
-  #footer a:hover {
-    color: #b0c5d9; }
-  #footer .center {
+  #footer .padding {
+    padding-top: 28px;
+    padding-bottom: 28px; }
+  #footer .align {
+    text-align: right; }
+
+@media (max-width: 768px) {
+  #footer {
     text-align: center; }
-  #footer h1 {
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 14px; }
-  #footer ul li {
-    margin-bottom: 12px; }
+    #footer .align {
+      text-align: center; } }
 
 .button-leaked-active {
   border-style: solid;

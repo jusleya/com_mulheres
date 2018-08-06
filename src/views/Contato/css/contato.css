@@ -5,6 +5,12 @@
   #contato a:hover {
     color: #343a40; }
 
+#contato .answer {
+  color: #486a8c;
+  font-size: 18px;
+  padding-bottom: 20px;
+  text-align: center; }
+
 #contato .box-contato {
   border-radius: 0px;
   border: 2px dashed #727f8c; }
@@ -24,6 +30,9 @@
 #contato .espaco {
   padding-right: 40px;
   padding-bottom: 20px; }
+
+#contato .icons {
+  vertical-align: -6px; }
 
 #contato .imagem {
   text-align: right; }

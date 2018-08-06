@@ -7,34 +7,31 @@
   background-color: $preto;
   color: white;
 
-  a {
+  .icon {
+    fill: white;
+    margin-left: 12px;
+    width: 32px;
     -webkit-transition: 0.2s ease-in;
     -moz-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
   }
 
-  a, p {
-    color: white;
-    font-size: 16px;
+  .padding {
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 
-  a:hover {
-    color: $azul_branco;
+  .align {
+    text-align: right;
   }
+}
 
-  .center {
+@media (max-width: 768px) {
+  #footer {
     text-align: center;
-  }
-
-  h1 {
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-  }
-
-  ul li {
-    margin-bottom: 12px;
+    .align {
+      text-align: center;
+    }
   }
 }

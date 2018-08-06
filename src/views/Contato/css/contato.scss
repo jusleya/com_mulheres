@@ -13,6 +13,13 @@
     }
   }
 
+  .answer {
+    color: $azul_claro;
+    font-size: 18px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
   .box-contato {
     border-radius: 0px;
     border: 2px dashed $azul_cinza;
@@ -36,6 +43,10 @@
   .espaco {
     padding-right: 40px;
     padding-bottom: 20px;
+  }
+
+  .icons {
+    vertical-align: -6px;
   }
 
   .imagem {

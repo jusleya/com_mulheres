@@ -50,7 +50,7 @@ class Adm extends React.Component {
                     linkedin="http://likedin.com/in/alanalucia"
                     instagram="https://www.instagram.com/alanaluci/"
                     facebook="https://www.facebook.com/alanalucia.souzaoliveira"
-                    email="mailto:alanalso@dcomp.ufs.br"
+                    email="mailto:alanaluciaso@gmail.com"
                   />
                 </div>
               </div>
@@ -81,7 +81,7 @@ class Adm extends React.Component {
               <div className={styleList}>
                 <div className="box-descricao">
                   <Descricao
-                    descricao={`Estudante de Ciência da Computação na Universidade Federal de Sergipe, pesquisadora na área de processamento de imagem e computação gráfica. Atualmente estagiando na empresa GetInfo como desenvolvedora Front-End. Uma das criadoras do projeto "Computação com Mulheres" (COM² Mulheres), organizer no GDG Aracaju e no projeto WTM Aracaju. Amo computação gráfica, câmera fotográfica, livros e karatê ♥.`}
+                    descricao={`Estudante de Ciência da Computação na Universidade Federal de Sergipe, pesquisadora na área de processamento de imagem e computação gráfica. Atualmente estagiando como desenvolvedora Front-End. Uma das criadoras do projeto "Computação com Mulheres" (COM² Mulheres), organizer no GDG Aracaju e no projeto WTM Aracaju. Amo computação gráfica, câmera fotográfica, livros e karatê ♥.`}
                     linkedin="https://br.linkedin.com/in/jusley-arley-422637143"
                     instagram="https://www.instagram.com/jusley_a/"
                     twitter="https://twitter.com/jusley_a"

@@ -41,13 +41,13 @@ const Grupo = () => (
           </p>
           <br/>
           <div className="icones">
-            <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/com.mulheres/" target="_blank" rel="noopener noreferrer">
               <InstagramIcon className="icon" />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/com2mulheres/" target="_blank" rel="noopener noreferrer">
               <FacebookBoxIcon className="icon"/>
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:commulheres@gmail.com" target="_blank" rel="noopener noreferrer">
               <EmailIcon className="icon"/>
             </a>
           </div>

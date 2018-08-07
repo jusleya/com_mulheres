@@ -59,7 +59,8 @@
 
 #sobre #equipe #equipe-children {
   text-align: center; }
-  #sobre #equipe #equipe-children .padding {
+  #sobre #equipe #equipe-children .descricao {
+    font-size: 16px;
     padding: 12px; }
   #sobre #equipe #equipe-children .fadeOut {
     opacity: 0;

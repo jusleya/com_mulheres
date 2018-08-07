@@ -3,7 +3,7 @@
 //----------------------
  @import '../../../assets/styles/variables.scss';
 
-#home {
+#home {  
   #banner {
     .bg {
       height: 330px;
@@ -19,13 +19,85 @@
       text-shadow: #000 -1px 1px 1px;
     }
   }
+
+  #conteudo {
+    .paddingLeft {
+      &-comMulheres {
+        padding-left: 60px;
+      }
+
+      &-parceiros {
+        padding-left: 120px;
+      }
+    }
+
+    .espaco-right {
+      padding-right: 24px;
+    }
+
+    .imagem {
+      max-height: 400px;
+    }
+    
+    .paddingTop {
+      &-comMulheres {
+        padding-top: 85px;
+      }
+
+      &-eventos {
+        padding-top: 30px;
+      }
+
+      &-parceiros {
+        padding-top: 20px;
+      }
+    }
+
+    .paddingBottom {
+      padding-bottom: 50px;
+    }
+
+    .text {
+      font-family: $family-second;
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    .titulo {
+      color: $azul_claro;
+      font-size: 40px;
+      text-align: center;
+    }
+  }
 }
 
-@media (min-width: 1087px) {
+@media (max-width:768px) {
   #home {
-    #banner {
-      .bg {
-        margin-bottom: 50px;
+    #conteudo {
+      text-align: center;
+      .paddingLeft {
+        &-comMulheres {
+          padding-left: 0px;
+        }
+  
+        &-parceiros {
+          padding-left: 0px;
+          padding-top: 50px;
+        }
+      }
+      
+      .paddingTop {
+        &-comMulheres {
+          padding-top: 10px;
+        }
+  
+        &-eventos {
+          padding-top: 0px;
+        }
+  
+        &-parceiros {
+          padding-top: 0px;
+        }
       }
     }
   }

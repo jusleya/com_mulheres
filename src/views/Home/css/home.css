@@ -11,6 +11,51 @@
   text-align: center;
   text-shadow: #000 -1px 1px 1px; }
 
-@media (min-width: 1087px) {
-  #home #banner .bg {
-    margin-bottom: 50px; } }
+#home #conteudo .paddingLeft-comMulheres {
+  padding-left: 60px; }
+
+#home #conteudo .paddingLeft-parceiros {
+  padding-left: 120px; }
+
+#home #conteudo .espaco-right {
+  padding-right: 24px; }
+
+#home #conteudo .imagem {
+  max-height: 400px; }
+
+#home #conteudo .paddingTop-comMulheres {
+  padding-top: 85px; }
+
+#home #conteudo .paddingTop-eventos {
+  padding-top: 30px; }
+
+#home #conteudo .paddingTop-parceiros {
+  padding-top: 20px; }
+
+#home #conteudo .paddingBottom {
+  padding-bottom: 50px; }
+
+#home #conteudo .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: justify; }
+
+#home #conteudo .titulo {
+  color: #486a8c;
+  font-size: 40px;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  #home #conteudo {
+    text-align: center; }
+    #home #conteudo .paddingLeft-comMulheres {
+      padding-left: 0px; }
+    #home #conteudo .paddingLeft-parceiros {
+      padding-left: 0px;
+      padding-top: 50px; }
+    #home #conteudo .paddingTop-comMulheres {
+      padding-top: 10px; }
+    #home #conteudo .paddingTop-eventos {
+      padding-top: 0px; }
+    #home #conteudo .paddingTop-parceiros {
+      padding-top: 0px; } }

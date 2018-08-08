@@ -46,7 +46,7 @@ const Home = () => (
               <p className="text">Eventualmente realizamos eventos independentes ou com grupos parceiros que nos permite ficar mais próximos do nosso público compartilhando nossas experiências na área e/ou na vida acadêmica.</p>
               <br/>
               <br/>
-              <div align="center"><Button link="/eventos">Saiba mais<i className="material-icons">keyboard_arrow_right</i></Button></div>
+              <div align="center"><Button disabled>Em breve</Button></div>
             </div>
           </div>
 

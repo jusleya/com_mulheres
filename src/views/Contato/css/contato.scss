@@ -12,6 +12,10 @@
       color: $preto;
     }
   }
+  
+  .align {
+    text-align: center;
+  }
 
   .answer {
     color: $azul_claro;
@@ -33,11 +37,6 @@
 
   .box-posicao {
     padding-top: 70px;
-  }
-
-  .button-espaco {
-    padding-bottom: 20px;
-    text-align: center;
   }
 
   .espaco {

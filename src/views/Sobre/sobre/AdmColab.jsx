@@ -46,12 +46,12 @@ class Colab extends React.Component {
               <div className={styleList}>
                 <div className="box-descricao">
                   <Descricao
-                    descricao={`Graduanda em Ciência da Computação pela Universidade Federal de Sergipe. Coordenadora do grupo "Computação com Mulheres" e também colaboradora do grupo WoMakersCode. Membro do grupo de pesquisa em Engenharia de Software e Assessora de Recursos Humanos da SofTeam - Empresa Júnior de Computação, ambos da UFS. Pesquisadora da área de Engenharia de Software; Informática na Educação e Informática na Saúde, área pela qual é apaixonada!`}
-                    linkedin=""
+                    descricao={`Graduanda em Ciência da Computação na Universidade Federal de Sergipe, estagiária no Tribunal Regional do Trabalho e assessora de recursos humanos da SofTeam - Empresa Júnior de Computação, também da UFS. Coordenadora do grupo COM² Mulheres e do grupo WoMakersCode em Sergipe. Pesquisadora em Engenharia de Software, Informática na Educação e Informática na Saúde (área pela qual sou apaixonada). Adoro ver filmes e ler livros de romance e tecnologia!`}
+                    linkedin="https://www.linkedin.com/in/ver%C3%B4nica-nascimento-b65707128/"
                     instagram=""
                     twitter=""
                     facebook=""
-                    email=""
+                    email="mailto:veronicanascimento.cc@gmail.com"
                   />
                 </div>
               </div>

@@ -1,6 +1,9 @@
 import React from 'react';
-import {Button} from 'bloomer';
 import axios from 'axios';
+import Recaptcha from 'react-recaptcha';
+
+//Components
+import Button from '../../components/Button';
 
 //Imagem
 import xicara from './image/xicara.png';
@@ -15,8 +18,16 @@ class Contato extends React.Component {
     this.state = {
       name: '', email: '', subject: '', message: '',
       answer: '',
+      isValidRecaptcha: false,
+      isLoadingButton: false
     }
+
+    this.verifyCallback = this.verifyCallback.bind(this);
   }
+
+  verifyCallback() {
+    this.setState({ isValidRecaptcha: true });
+  };
 
   handleFormChange = (e) => {
     const {name, value} = e.target;
@@ -26,7 +37,14 @@ class Contato extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    this.setState({answer: [<i className="material-icons icons">loop</i>, " Enviando sua mensagem..."]});
+    this.setState({answer: ""});
+    this.setState({isLoadingButton: true});
+
+    if(!this.state.isValidRecaptcha) {
+      this.setState({answer: ["Efetue a verificação do robô."]});
+      this.setState({isLoadingButton: false});
+      return;
+    }
 
     axios.post("", {
       name: this.state.name,
@@ -35,17 +53,25 @@ class Contato extends React.Component {
       message: this.state.message
     })
     .then((response) => {
-      if(!response.data.error) this.setState({answer: [<i className="material-icons icons">check</i>, " Sua mensagem foi enviada com sucesso!"]});
-      else this.setState({answer: [<i className="material-icons icons">clear</i>, " Errou!"]});
+      if(!response.data.error) {
+        this.setState({answer: [<i className="material-icons icons">check</i>, " Sua mensagem foi enviada com sucesso!"]});
+        this.setState({isLoadingButton: false});
+      }
+      else {
+        this.setState({answer: [<i className="material-icons icons">clear</i>, " Errou!"]});
+        this.setState({isLoadingButton: false});
+      }
       //console.log(response);
     })
     .catch((error) => {
       this.setState({answer: [<i className="material-icons icons">clear</i>, " Errou!"]});
+      this.setState({isLoadingButton: false});
       //console.log(error);
     });
   }
 
   render(){
+    const { verifyCallback } = this;
     return(
       <div id="contato"> 
         <div className="section">
@@ -137,12 +163,26 @@ class Contato extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <p className="answer">{this.state.answer}</p>
+                  
+                    <div className="espaco" align="center">
+                      <Recaptcha
+                        sitekey=""
+                        render="explicit"
+                        hl="pt-BR"
+                        verifyCallback={verifyCallback}
+                        required />
+                    </div>
+
                     <div className="field">
                       <div className="control">
-                        <div className="button-espaco"><Button type="submit">Enviar</Button></div>
+                        <div className="align">
+                          <Button type="submit" isLoading={this.state.isLoadingButton}>Enviar</Button>
+                        </div>
                       </div>
                     </div>
+
+                    <p className="answer">{this.state.answer}</p>
+
                   </form>
                 </div>
               </div>

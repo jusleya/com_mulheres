@@ -5,6 +5,9 @@
   #contato a:hover {
     color: #343a40; }
 
+#contato .align {
+  text-align: center; }
+
 #contato .answer {
   color: #486a8c;
   font-size: 18px;
@@ -22,10 +25,6 @@
 
 #contato .box-posicao {
   padding-top: 70px; }
-
-#contato .button-espaco {
-  padding-bottom: 20px;
-  text-align: center; }
 
 #contato .espaco {
   padding-right: 40px;

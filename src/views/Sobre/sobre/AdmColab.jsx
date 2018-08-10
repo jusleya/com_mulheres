@@ -82,7 +82,7 @@ class Colab extends React.Component {
               <div className={styleList}>
                 <div className="box-descricao">
                   <Descricao
-                    descricao={`Graduanda em Ciência da Computação na Universidade Federal de Sergipe e pesquisadora na área de Metodologia e Técnicas da Computação, Linguagens de Programação e Engenharia de Software. Apaixonada por programação, desafios, jogos de RPG e séries de TV.`}
+                    descricao={`Graduanda em Ciência da Computação na Universidade Federal de Sergipe. Atualmente pesquisadora na área de Teoria e Otimização, mas já pesquisou também nas áreas de Metodologia e Técnicas da Computação, Linguagens de Programação e Engenharia de Software. Apaixonada por programação, desafios, jogos de RPG e séries de TV.`}
                     linkedin="https://www.linkedin.com/in/jaine-concei%C3%A7%C3%A3o-02b531138/"
                     instagram="https://www.instagram.com/jaiconceicao/"
                     email="mailto:jayne-conceicao@hotmail.com"

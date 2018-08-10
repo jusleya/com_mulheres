@@ -4,9 +4,16 @@
 @import '../../../assets/styles/variables.scss';
 
 #emBreve {
-  margin-top: -5px;
+  .padding {
+    padding-top: 30px;
+  }
+  
+  .sub-title {
+    color: $preto;
+    font-size: 18px;
+  }
 
-  h1, h2 {
-    color: white;
+  .title {
+    color: $preto;
   }
 }

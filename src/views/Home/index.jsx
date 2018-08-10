@@ -24,7 +24,7 @@ const Home = () => (
             <div className="column is-5">
               <p className="titulo paddingTop-comMulheres">COM² Mulheres</p>
               <br/>
-              <p className="text">Criado em junho de 2017, somos um grupo de sete mulheres que desejam a inclusão de mais mulheres na área de computação. Queremos igualdade, pois não é o nosso gênero que define se somos capazes de programar.</p>
+              <p className="text">Criado em junho de 2017, somos um grupo de seis mulheres que desejam a inclusão de mais mulheres na área de computação. Queremos igualdade, pois não é o nosso gênero que define se somos capazes de programar.</p>
               <br/>
               <br/>
               <div align="center"><Button link="/sobre">Nos conheça<i className="material-icons">keyboard_arrow_right</i></Button></div>

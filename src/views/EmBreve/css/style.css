@@ -1,4 +1,9 @@
-#emBreve {
-  margin-top: -5px; }
-  #emBreve h1, #emBreve h2 {
-    color: white; }
+#emBreve .padding {
+  padding-top: 30px; }
+
+#emBreve .sub-title {
+  color: #343a40;
+  font-size: 18px; }
+
+#emBreve .title {
+  color: #343a40; }

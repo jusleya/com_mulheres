@@ -1,4 +1,6 @@
-#page404 {
-  margin-top: -5px; }
-  #page404 h1, #page404 h2 {
-    color: white; }
+#page404 .sub-title {
+  color: #343a40;
+  font-size: 18px; }
+
+#page404 .title {
+  color: #343a40; }

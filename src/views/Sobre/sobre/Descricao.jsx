@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Icones
-import { EmailIcon, FacebookBoxIcon, InstagramIcon, LinkedinBoxIcon, TwitterBoxIcon } from 'mdi-react';
+import { EmailIcon, FacebookBoxIcon, InstagramIcon, LinkedinBoxIcon, TwitterBoxIcon, YoutubeIcon } from 'mdi-react';
 
 class Descricao extends React.Component {
   render(){
@@ -12,7 +12,7 @@ class Descricao extends React.Component {
         <span>
           <a href={props.linkedin} target="_blank" rel="noopener noreferrer">
             { props.linkedin ?
-            <LinkedinBoxIcon className="icon" />
+            <LinkedinBoxIcon className="icon linkedin" />
             : null
             }
           </a>
@@ -20,7 +20,7 @@ class Descricao extends React.Component {
         <span>
           <a href={props.instagram} target="_blank" rel="noopener noreferrer">
             { props.instagram ?
-              <InstagramIcon className="icon" />
+              <InstagramIcon className="icon instagram" />
               : null
             }
           </a>
@@ -28,7 +28,7 @@ class Descricao extends React.Component {
         <span>
           <a href={props.twitter} target="_blank" rel="noopener noreferrer">
             { props.twitter ?
-              <TwitterBoxIcon className="icon" />
+              <TwitterBoxIcon className="icon twitter" />
               : null
             }
           </a>
@@ -36,7 +36,15 @@ class Descricao extends React.Component {
         <span>
           <a href={props.facebook} target="_blank" rel="noopener noreferrer">
             { props.facebook ?
-              <FacebookBoxIcon className="icon"/>
+              <FacebookBoxIcon className="icon facebook"/>
+              : null
+            }
+          </a>
+        </span>
+        <span>
+          <a href={props.youtube} target="_blank" rel="noopener noreferrer">
+            { props.youtube ?
+              <YoutubeIcon className="icon youtube"/>
               : null
             }
           </a>
@@ -44,7 +52,7 @@ class Descricao extends React.Component {
         <span>
           <a href={props.email} target="_blank" rel="noopener noreferrer">
             { props.email ?
-              <EmailIcon className="icon"/>
+              <EmailIcon className="icon email"/>
               : null
             }
           </a>

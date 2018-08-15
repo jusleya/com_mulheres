@@ -118,11 +118,11 @@ class Adm extends React.Component {
                 <div className="box-descricao">
                   <Descricao
                     descricao={`Formada em Análise e Desenvolvimento de Sistemas; Desenvolvedora Java, C, C# e PHP; Entusiasta do Software Livre; Colaboradora do LibreOffice Brasil e dos grupos Computação com Mulheres e WoMakersCode. Trabalha com desenvolvimento de aplicativos e é apaixonada por Engenharia de Software.`}
-                    linkedin=""
-                    instagram=""
-                    twitter=""
-                    facebook=""
-                    email=""
+                    linkedin="https://br.linkedin.com/in/sthefane-camilo-soares-da-silva-49237985"
+                    instagram="https://www.instagram.com/sthe.soares/"
+                    facebook="http://commulheres.com/sobre"
+                    youtube="https://www.youtube.com/user/vidaprogramacao"
+                    email="mailto:sthedeveloper@gmail.com"
                   />
                 </div>
               </div>

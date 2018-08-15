@@ -48,9 +48,9 @@ class Colab extends React.Component {
                   <Descricao
                     descricao={`Graduanda em Ciência da Computação na Universidade Federal de Sergipe, estagiária no Tribunal Regional do Trabalho e assessora de recursos humanos da SofTeam - Empresa Júnior de Computação, também da UFS. Coordenadora do grupo COM² Mulheres e do grupo WoMakersCode em Sergipe. Pesquisadora em Engenharia de Software, Informática na Educação e Informática na Saúde (área pela qual sou apaixonada). Adoro ver filmes e ler livros de romance e tecnologia!`}
                     linkedin="https://www.linkedin.com/in/ver%C3%B4nica-nascimento-b65707128/"
-                    instagram=""
+                    instagram="https://www.instagram.com/veronicka.nascimento/"
                     twitter=""
-                    facebook=""
+                    facebook="https://www.facebook.com/veronicka.nascimento"
                     email="mailto:veronicanascimento.cc@gmail.com"
                   />
                 </div>

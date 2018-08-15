@@ -1,5 +1,5 @@
 #sobre .icon {
-  fill: #2e4459 !important;
+  fill: #2e4459;
   height: 32px;
   margin-left: 12px;
   width: 32px;
@@ -7,6 +7,24 @@
   -moz-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
+
+#sobre .email:hover {
+  fill: #094229; }
+
+#sobre .instagram:hover {
+  fill: #db236c; }
+
+#sobre .facebook:hover {
+  fill: #4267b2; }
+
+#sobre .linkedin:hover {
+  fill: #0073b1; }
+
+#sobre .twitter:hover {
+  fill: #0084B4; }
+
+#sobre .youtube:hover {
+  fill: #bb0000; }
 
 #sobre .texto {
   font-family: "Montserrat", sans-serif;

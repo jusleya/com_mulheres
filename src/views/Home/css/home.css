@@ -27,7 +27,10 @@
   padding-top: 85px; }
 
 #home #conteudo .paddingTop-eventos {
-  padding-top: 30px; }
+  padding-top: 10px; }
+
+#home #conteudo .paddingTop-eventos-foto {
+  padding-top: 25px; }
 
 #home #conteudo .paddingTop-parceiros {
   padding-top: 20px; }

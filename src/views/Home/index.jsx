@@ -27,7 +27,7 @@ const Home = () => (
               <p className="text">Criado em junho de 2017, somos um grupo de seis mulheres que desejam a inclusão de mais mulheres na área de computação. Queremos igualdade, pois não é o nosso gênero que define se somos capazes de programar.</p>
               <br/>
               <br/>
-              <div align="center"><Button link="/sobre">Nos conheça<i className="material-icons">keyboard_arrow_right</i></Button></div>
+              <div align="center"><Button type="" link="/sobre">Nos conheça<i className="material-icons">keyboard_arrow_right</i></Button></div>
             </div>
             <div className="column is-6 paddingLeft-comMulheres">
               <img className="imagem" src={nos} alt="" />
@@ -38,15 +38,17 @@ const Home = () => (
 
           <div className="columns is-centered">
             <div className="column is-6">
-              <img className="imagem" src={eventos} alt="" />
+              <img className="imagem paddingTop-eventos-foto" src={eventos} alt="" />
             </div>
             <div className="column is-5">
-              <p className="titulo paddingTop-eventos">Eventos</p>
+              <p className="titulo paddingTop-eventos">Eventos e Palestras</p>
               <br/>
-              <p className="text">Eventualmente realizamos eventos independentes ou com grupos parceiros que nos permite ficar mais próximos do nosso público compartilhando nossas experiências na área e/ou na vida acadêmica.</p>
+              <p className="text">
+                Realizamos eventos independentes e com grupos parceiros, como também somos convidadas para palestrar em eventos da área aqui em Sergipe e em outros estados. Isso nos permite ficar mais próximas do nosso público e compartilhar nossas experiências na área e/ou na vida acadêmica. 
+                Para ter uma palestra nossa no seu evento, entre em <a href="/contato">contato</a>.
+              </p>
               <br/>
-              <br/>
-              <div align="center"><Button disabled>Em breve</Button></div>
+              <div align="center"><Button type="" disabled>Em breve</Button></div>
             </div>
           </div>
 
@@ -59,7 +61,7 @@ const Home = () => (
               <p className="text">Queremos juntar pessoas/grupos que tenham objetivos semelhantes ao nosso para nos tornarmos uma comunidade mais forte. Quer ser um parceiro ou ser um colaborador com nossa página?</p>
               <br/>
               <br/>
-              <div align="center"><Button link="/contato">Entre em contato<i className="material-icons">keyboard_arrow_right</i></Button></div>
+              <div align="center"><Button type="" link="/contato">Entre em contato<i className="material-icons">keyboard_arrow_right</i></Button></div>
             </div>
             <div className="column is-6 paddingLeft-parceiros">
               <img className="imagem" src={parceiros} alt="" />

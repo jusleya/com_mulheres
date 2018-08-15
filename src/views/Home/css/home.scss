@@ -3,7 +3,16 @@
 //----------------------
  @import '../../../assets/styles/variables.scss';
 
-#home {  
+#home {
+  a {
+    color: $azul_claro;
+    font-family: $family-second;
+    font-size: 16px;
+    &:hover {
+      color: $preto;
+    }
+  }
+  
   #banner {
     .bg {
       height: 330px;

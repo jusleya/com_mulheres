@@ -6457,6 +6457,10 @@ body {
 #footer {
   background-color: #343a40;
   color: white; }
+  #footer a {
+    color: white; }
+    #footer a:hover {
+      color: #486a8c; }
   #footer .icon {
     fill: white;
     margin-left: 12px;

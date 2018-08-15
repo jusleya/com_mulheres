@@ -45,7 +45,7 @@ const Home = () => (
               <br/>
               <p className="text">
                 Realizamos eventos independentes e com grupos parceiros, como também somos convidadas para palestrar em eventos da área aqui em Sergipe e em outros estados. Isso nos permite ficar mais próximas do nosso público e compartilhar nossas experiências na área e/ou na vida acadêmica. 
-                Para ter uma palestra nossa no seu evento, entre em <a href="/contato">contato</a>.
+                Para ter uma palestra nossa no seu evento, entre em <strong><a href="/contato" target="_blank" rel="noopener noreferrer">contato</a></strong>.
               </p>
               <br/>
               <div align="center"><Button type="" disabled>Em breve</Button></div>

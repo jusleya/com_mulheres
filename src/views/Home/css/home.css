@@ -1,3 +1,10 @@
+#home a {
+  color: #486a8c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; }
+  #home a:hover {
+    color: #343a40; }
+
 #home #banner .bg {
   height: 330px; }
 

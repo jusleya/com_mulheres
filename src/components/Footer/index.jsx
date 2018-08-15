@@ -9,7 +9,7 @@ const Footer = () => (
       <div className="container">
         <Columns isCentered className="final-footer">
           <Column isSize="3/4">
-            <p>© Copyright 2018 | Todos os direitos reservados | Design e desenvolvimento por Jusley Arley.</p>
+            <p>© Copyright 2018 | Todos os direitos reservados | Design e desenvolvimento por <u><a href="https://br.linkedin.com/in/jusley-arley-422637143" target="_blank" rel="noopener noreferrer">Jusley Arley</a></u>.</p>
           </Column>
           <Column className="align">
             <a href="https://www.instagram.com/com.mulheres/" target="_blank" rel="noopener noreferrer">

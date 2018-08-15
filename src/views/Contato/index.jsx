@@ -195,7 +195,7 @@ class Contato extends React.Component {
                   <p className="texto">
                     Oi, tudo bem? Quer conversar ou fazer parceria com a gente? Nós do <strong>COM² Mulheres</strong> vamos adorar ler seu e-mail. É só preencher o formulário que entraremos em contato em breve.
                     <br/>
-                    Ou se preferir, você pode nos encontrar no <strong><a href="https://www.instagram.com/com.mulheres/">Instagram</a></strong>, <strong><a href="https://www.facebook.com/com2mulheres/">Facebook</a></strong> ou no e-mail: <strong><a href="">com.mulheres@gmail.com</a></strong>.
+                    Ou se preferir, você pode nos encontrar no <strong><a href="https://www.instagram.com/com.mulheres/" target="_blank" rel="noopener noreferrer">Instagram</a></strong>, <strong><a href="https://www.facebook.com/com2mulheres/" target="_blank" rel="noopener noreferrer">Facebook</a></strong> ou no e-mail: <strong><a href="mailto:com.mulheres@gmail.com" target="_blank" rel="noopener noreferrer">com.mulheres@gmail.com</a></strong>.
                   </p>
                 </div>
               </div>

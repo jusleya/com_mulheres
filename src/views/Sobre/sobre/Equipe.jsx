@@ -9,6 +9,7 @@ import Alana from '../image/nos/alana.jpg';
 import Jusley from '../image/nos/jusley.jpg';
 import Sthe from '../image/nos/sthe.jpg';
 import Veronica from '../image/nos/veronica.jpg';
+import Aryella from '../image/nos/aryella.jpg';
 import Jaine from '../image/nos/jaine.jpg';
 import Natalia from '../image/nos/natalia.jpg';
 
@@ -28,8 +29,9 @@ class Equipe extends React.Component {
           <br/>
           <Colab
             image4={Veronica} name4="Verônica Nascimento" funcao4="Administração"
-            image5={Jaine} name5="Jaine Conceição" funcao5="Colaboradora"
-            image6={Natalia} name6="Natália Guimarães" funcao6="Colaboradora"
+            image5={Aryella} name5="Aryella Lacerda" funcao5="Colaboradora"
+            image6={Jaine} name6="Jaine Conceição" funcao6="Colaboradora"
+            image7={Natalia} name7="Natália Guimarães" funcao7="Colaboradora"
           />
           <hr style={hr} />
         </div>

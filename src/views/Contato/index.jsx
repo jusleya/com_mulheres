@@ -58,13 +58,13 @@ class Contato extends React.Component {
         this.setState({isLoadingButton: false});
       }
       else {
-        this.setState({answer: [<i className="material-icons icons">clear</i>, " Errou!"]});
+        this.setState({answer: [<i className="material-icons icons">clear</i>, "Errou!"]});
         this.setState({isLoadingButton: false});
       }
       //console.log(response);
     })
     .catch((error) => {
-      this.setState({answer: [<i className="material-icons icons">clear</i>, " Errou!"]});
+      this.setState({answer: [<i className="material-icons icons">clear</i>, "Errou!"]});
       this.setState({isLoadingButton: false});
       //console.log(error);
     });
@@ -166,7 +166,7 @@ class Contato extends React.Component {
                   
                     <div className="espaco" align="center">
                       <Recaptcha
-                        sitekey=""
+                        sitekey="6Lf86GgUAAAAAOQel9NbCaUfZFLgkfxa4n1VX2ZG"
                         render="explicit"
                         hl="pt-BR"
                         verifyCallback={verifyCallback}

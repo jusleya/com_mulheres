@@ -51,6 +51,9 @@
     border-radius: 0px;
     border: 1px dashed #727f8c;
     max-width: 280px; }
+  #sobre #equipe #card .box-noCard {
+    border-radius: 0px;
+    max-width: 280px; }
   #sobre #equipe #card .funcao {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;

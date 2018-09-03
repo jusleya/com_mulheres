@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
+//CSS
+import './css/style.css';
+
 const Button = (props) => (
   props.disabled ? (
     <div id="button-component">

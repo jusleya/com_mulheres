@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+//CSS
+import './css/style.css';
+
 class PageNotFound extends Component {
   render() {
     return (

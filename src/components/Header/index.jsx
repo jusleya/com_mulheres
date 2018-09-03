@@ -13,6 +13,9 @@ import { NavLink } from 'react-router-dom';
 //Imagens
 import logo from '../../assets/image/logo.png';
 
+//CSS
+import './css/style.css';
+
 class Header extends Component {
   constructor(props) {
     super(props);

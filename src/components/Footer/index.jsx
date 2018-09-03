@@ -1,7 +1,11 @@
 import React from 'react';
 import {Columns, Column} from 'bloomer';
+
 //Icones
 import { EmailIcon, FacebookBoxIcon, InstagramIcon } from 'mdi-react';
+
+//CSS
+import './css/style.css';
 
 const Footer = () => (
   <div id="footer">

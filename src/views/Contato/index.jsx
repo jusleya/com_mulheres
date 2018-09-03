@@ -10,7 +10,7 @@ import Button from '../../components/Button';
 import xicara from './image/xicara.png';
 
 //CSS
-import './css/contato.css';
+import './css/style.css';
 
 class Contato extends React.Component {
   constructor(props){

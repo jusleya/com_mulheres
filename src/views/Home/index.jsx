@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Components
-import Banner    from './home/Banner';
+import Banner    from './components/Banner';
 import Button   from '../../components/Button';
 
 //Image
@@ -10,7 +10,7 @@ import eventos from './image/eventos.jpg';
 import parceiros from './image/parceiros.png';
 
 //CSS
-import './css/home.css';
+import './css/style.css';
 
 const hr = {border:"1px dashed rgb(189, 203, 216)"};
 

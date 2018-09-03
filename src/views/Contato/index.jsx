@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Recaptcha from 'react-recaptcha';
+import SimpleReactValidator from 'simple-react-validator';
 
 //Components
 import Button from '../../components/Button';
@@ -23,6 +24,7 @@ class Contato extends React.Component {
     }
 
     this.verifyCallback = this.verifyCallback.bind(this);
+    this.validator = new SimpleReactValidator();
   }
 
   verifyCallback() {
@@ -46,6 +48,14 @@ class Contato extends React.Component {
       return;
     }
 
+    if(!this.validator.allValid()) {
+      this.validator.showMessages();
+      this.forceUpdate();
+      return;
+    }
+
+    this.setState({answer: [<i class="material-icons icons">loop</i>, " Enviando sua mensagem..."]});
+
     axios.post("", {
       name: this.state.name,
       email: this.state.email,
@@ -58,13 +68,13 @@ class Contato extends React.Component {
         this.setState({isLoadingButton: false});
       }
       else {
-        this.setState({answer: [<i className="material-icons icons">clear</i>, "Errou!"]});
+        this.setState({answer: [<i className="material-icons icons">clear</i>, "Ops! Ocorreu algum erro ao enviar sua mensagem. Por favor, tente novamente."]});
         this.setState({isLoadingButton: false});
       }
       //console.log(response);
     })
     .catch((error) => {
-      this.setState({answer: [<i className="material-icons icons">clear</i>, "Errou!"]});
+      this.setState({answer: [<i className="material-icons icons">clear</i>, "Ops! Ocorreu algum erro ao enviar sua mensagem. Por favor, tente novamente."]});
       this.setState({isLoadingButton: false});
       //console.log(error);
     });
@@ -87,9 +97,9 @@ class Contato extends React.Component {
                       </div>
                       <div className="field-body">
                         <div className="field">
-                          <p className="control">
+                          <div className="control">
                             <input
-                              required
+                              id="name"
                               name="name"
                               className="input"
                               type="text"
@@ -97,7 +107,8 @@ class Contato extends React.Component {
                               value={this.state.name}
                               onChange={this.handleFormChange}
                             />
-                          </p>
+                            <span>{this.validator.message('name', this.state.name, 'required', false, { default: "Campo obrigatório" })}</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -108,9 +119,9 @@ class Contato extends React.Component {
                       </div>
                       <div className="field-body">
                         <div className="field">
-                          <p className="control">
+                          <div className="control">
                             <input
-                              required
+                              id="email"
                               name="email"
                               className="input"
                               type="email"
@@ -118,7 +129,8 @@ class Contato extends React.Component {
                               value={this.state.email}
                               onChange={this.handleFormChange}
                             />
-                          </p>
+                            <span>{this.validator.message('email', this.state.email, 'required', false, { default: "Campo obrigatório" })}</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -129,9 +141,9 @@ class Contato extends React.Component {
                       </div>
                       <div className="field-body">
                         <div className="field">
-                          <p className="control">
+                          <div className="control">
                             <input
-                              required
+                              id="subject"
                               name="subject"
                               className="input"
                               type="text"
@@ -139,7 +151,8 @@ class Contato extends React.Component {
                               value={this.state.subject}
                               onChange={this.handleFormChange}
                             />
-                          </p>
+                            <span>{this.validator.message('subject', this.state.subject, 'required', false, { default: "Campo obrigatório" })}</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -150,23 +163,24 @@ class Contato extends React.Component {
                       </div>
                       <div className="field-body">
                         <div className="field">
-                          <p className="control">
+                          <div className="control">
                             <textarea
-                              required
+                              id="message"
                               name="message"
                               className="textarea"
                               placeholder="Mensagem..."
-                              value={this.state.textarea}
+                              value={this.state.message}
                               onChange={this.handleFormChange}>
                             </textarea>
-                          </p>
+                            <span>{this.validator.message('message', this.state.message, 'required', false, { default: "Campo obrigatório" })}</span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   
                     <div className="espaco" align="center">
                       <Recaptcha
-                        sitekey="6Lf86GgUAAAAAOQel9NbCaUfZFLgkfxa4n1VX2ZG"
+                        sitekey=""
                         render="explicit"
                         hl="pt-BR"
                         verifyCallback={verifyCallback}
@@ -176,7 +190,7 @@ class Contato extends React.Component {
                     <div className="field">
                       <div className="control">
                         <div className="align">
-                          <Button type="submit" isLoading={this.state.isLoadingButton}>Enviar</Button>
+                          <Button type="submit">Enviar</Button>
                         </div>
                       </div>
                     </div>
@@ -195,7 +209,7 @@ class Contato extends React.Component {
                   <p className="texto">
                     Oi, tudo bem? Quer conversar ou fazer parceria com a gente? Nós do <strong>COM² Mulheres</strong> vamos adorar ler seu e-mail. É só preencher o formulário que entraremos em contato em breve.
                     <br/>
-                    Ou se preferir, você pode nos encontrar no <strong><a href="https://www.instagram.com/com.mulheres/" target="_blank" rel="noopener noreferrer">Instagram</a></strong>, <strong><a href="https://www.facebook.com/com2mulheres/" target="_blank" rel="noopener noreferrer">Facebook</a></strong> ou no e-mail: <strong><a href="mailto:com.mulheres@gmail.com" target="_blank" rel="noopener noreferrer">com.mulheres@gmail.com</a></strong>.
+                    Ou se preferir, você pode nos encontrar no <strong><a id="instagram" href="https://www.instagram.com/com.mulheres/" target="_blank" rel="noopener noreferrer">Instagram</a></strong>, <strong><a id="facebook" href="https://www.facebook.com/com2mulheres/" target="_blank" rel="noopener noreferrer">Facebook</a></strong> ou no e-mail: <strong><a href="mailto:com.mulheres@gmail.com" target="_blank" rel="noopener noreferrer">com.mulheres@gmail.com</a></strong>.
                   </p>
                 </div>
               </div>

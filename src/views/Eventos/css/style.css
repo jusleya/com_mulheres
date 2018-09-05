@@ -1,0 +1,44 @@
+#eventos .box-card {
+  border-radius: 0px;
+  border: 1px dashed #727f8c; }
+
+#eventos #destaque {
+  text-align: center; }
+  #eventos #destaque .descricao {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-align: justify; }
+  #eventos #destaque .mapa {
+    color: #486a8c;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px; }
+    #eventos #destaque .mapa:hover {
+      color: #343a40; }
+  #eventos #destaque .padding-image {
+    padding-left: 30px; }
+  #eventos #destaque .padding-descricao {
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px; }
+  #eventos #destaque .padding-titulo {
+    padding-top: 30px; }
+  #eventos #destaque .titulo {
+    color: #486a8c;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre-line !important; }
+
+@media (max-width: 768px) {
+  #eventos #destaque .padding-image {
+    margin: 0 auto;
+    padding-left: 0px; } }
+
+@media (min-width: 769px) and (max-width: 977px) {
+  #eventos #destaque .image {
+    max-width: 320px; }
+  #eventos #destaque .padding-image {
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-top: 30px; } }

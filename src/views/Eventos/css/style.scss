@@ -1,0 +1,78 @@
+//----------------------
+// Variables
+//----------------------
+@import '../../../assets/styles/variables.scss';
+
+#eventos {
+  .box-card {
+    border-radius: 0px;
+    border: 1px dashed $azul_cinza;
+  }
+  #destaque {
+    text-align: center;
+
+    .descricao {
+      font-family: $family-second;
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    .mapa {
+      color: $azul_claro;
+      font-family: $family-second;
+      font-size: 16px;
+      &:hover {
+        color: $preto;
+      }
+    }
+
+    .padding {
+      &-image {
+        padding-left: 30px;
+      }
+      &-descricao {
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+      }
+      &-titulo {
+        padding-top: 30px;
+      }
+    }
+
+    .titulo {
+      color: $azul_claro;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      white-space: pre-line !important;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  #eventos {
+    #destaque {
+      .padding-image {
+        margin: 0 auto;
+        padding-left: 0px;
+      }
+    }
+  }
+}
+
+@media (min-width:769px) and (max-width:977px) {
+  #eventos {
+    #destaque {
+      .image {
+        max-width: 320px;
+      }
+      .padding-image {
+        margin: 0 auto;
+        padding-left: 0px;
+        padding-top: 30px;
+      }
+    }
+  }
+}

@@ -8,10 +8,10 @@ import ScrollToTop from './components/ScrollToTop';
 
 //Pages
 import Contato from './views/Contato';
-import EmBreve from './views/EmBreve';
 import Home    from './views/Home';
 import Sobre   from './views/Sobre';
 import PageNotFound from './views/404';
+import Eventos from './views/Eventos';
 
 const Main = () => (
   <Router>
@@ -22,7 +22,7 @@ const Main = () => (
           <Route exact path='/' component={Home} />
           <Route exact path='/sobre' component={Sobre} />
           <Route exact path='/contato' component={Contato} />
-          <Route exact path='/eventos' component={EmBreve} />
+          <Route exact path='/eventos' component={Eventos} />
           <Route component={PageNotFound} />
         </Switch>
         <Footer />

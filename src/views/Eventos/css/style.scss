@@ -8,6 +8,10 @@
     border-radius: 0px;
     border: 1px dashed $azul_cinza;
   }
+
+  .paginas {
+    padding-top: 60px;
+  }
   #destaque {
     text-align: center;
 
@@ -47,6 +51,49 @@
       font-weight: bold;
       text-align: center;
       white-space: pre-line !important;
+    }
+  }
+
+  #anteriores {
+    .align {
+      text-align: center;
+    }
+
+    .box-bottom {
+      border-bottom: 1px dashed $azul_cinza;
+    }
+
+    .box-right {
+      border-right: 1px dashed $azul_cinza;
+    }
+
+    .container-column {
+      padding: 24px;
+    }
+
+    .descricao {
+      font-family: $family-second;
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    .image {
+      max-width: 300px;
+      padding-bottom: 20px;
+    }
+
+    .titulo {
+      color: $azul_claro;
+      font-size: 40px;
+      padding-bottom: 35px;
+      text-align: center;
+      
+      &-evento {
+        color: $azul_escuro;
+        font-family: $family-second;
+        font-size: 18px;
+        padding-bottom: 20px;
+      }
     }
   }
 }

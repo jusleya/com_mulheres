@@ -2,6 +2,9 @@
   border-radius: 0px;
   border: 1px dashed #727f8c; }
 
+#eventos .paginas {
+  padding-top: 60px; }
+
 #eventos #destaque {
   text-align: center; }
   #eventos #destaque .descricao {
@@ -29,6 +32,38 @@
     font-weight: bold;
     text-align: center;
     white-space: pre-line !important; }
+
+#eventos #anteriores .align {
+  text-align: center; }
+
+#eventos #anteriores .box-bottom {
+  border-bottom: 1px dashed #727f8c; }
+
+#eventos #anteriores .box-right {
+  border-right: 1px dashed #727f8c; }
+
+#eventos #anteriores .container-column {
+  padding: 24px; }
+
+#eventos #anteriores .descricao {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: justify; }
+
+#eventos #anteriores .image {
+  max-width: 300px;
+  padding-bottom: 20px; }
+
+#eventos #anteriores .titulo {
+  color: #486a8c;
+  font-size: 40px;
+  padding-bottom: 35px;
+  text-align: center; }
+  #eventos #anteriores .titulo-evento {
+    color: #2e4459;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px; }
 
 @media (max-width: 768px) {
   #eventos #destaque .padding-image {

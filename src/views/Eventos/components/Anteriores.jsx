@@ -17,7 +17,7 @@ const Anteriores = () => (
             O Evento <i>WomakersCode</i> ocorreu no dia 18 de agosto de 2018, que teve foco no desenvolvimento web e mobile.
           </p>
           <br/>
-          <div align="center"><Button type="" link="/">Saiba Mais<i className="material-icons">keyboard_arrow_right</i></Button></div>
+          <div align="center"><Button type="" link="/pagina-evento">Saiba Mais<i className="material-icons">keyboard_arrow_right</i></Button></div>
         </div>
         <div align="center" className="column is-4 box-right container-column">
           <p className="titulo-evento">WomakersCode Summit Nordeste</p>

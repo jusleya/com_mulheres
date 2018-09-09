@@ -12,6 +12,7 @@ import Home    from './views/Home';
 import Sobre   from './views/Sobre';
 import PageNotFound from './views/404';
 import Eventos from './views/Eventos';
+import PagEvento from './views/Eventos/components/PagEvento';
 
 const Main = () => (
   <Router>
@@ -23,6 +24,7 @@ const Main = () => (
           <Route exact path='/sobre' component={Sobre} />
           <Route exact path='/contato' component={Contato} />
           <Route exact path='/eventos' component={Eventos} />
+          <Route exact path='/pagina-evento' component={PagEvento} />
           <Route component={PageNotFound} />
         </Switch>
         <Footer />

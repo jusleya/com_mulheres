@@ -59,7 +59,8 @@
 #eventos #anteriores .box-bottom {
   border-bottom: 1px dashed #727f8c; }
 
-#eventos #anteriores .box-right {
+#eventos #anteriores .box-medium {
+  border-left: 1px dashed #727f8c;
   border-right: 1px dashed #727f8c; }
 
 #eventos #anteriores .container-column {
@@ -88,6 +89,9 @@
 #pag-evento .image {
   max-width: 500px; }
 
+#pag-evento .texto {
+  font-family: "Montserrat", sans-serif; }
+
 #pag-evento .titulo {
   color: #486a8c; }
 
@@ -95,9 +99,11 @@
   #eventos #destaque .padding-image {
     margin: 0 auto;
     padding-left: 0px; }
-  #eventos #anteriores .box-right {
+  #eventos #anteriores .box-medium {
     border-bottom: 1px dashed #727f8c;
-    border-right: none; } }
+    border-top: 1px dashed #727f8c;
+    border-right: none;
+    border-left: none; } }
 
 @media (min-width: 769px) and (max-width: 977px) {
   #eventos #destaque .image {

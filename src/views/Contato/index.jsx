@@ -13,7 +13,7 @@ import xicara from './image/xicara.png';
 import './css/style.css';
 
 class Contato extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -32,29 +32,29 @@ class Contato extends React.Component {
   };
 
   handleFormChange = (e) => {
-    const {name, value} = e.target;
-    this.setState({[name]: value});
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
 
-    this.setState({answer: ""});
-    this.setState({isLoadingButton: true});
+    this.setState({ answer: "" });
+    this.setState({ isLoadingButton: true });
 
-    if(!this.state.isValidRecaptcha) {
-      this.setState({answer: ["Efetue a verificação do robô."]});
-      this.setState({isLoadingButton: false});
+    if (!this.state.isValidRecaptcha) {
+      this.setState({ answer: ["Efetue a verificação do robô."] });
+      this.setState({ isLoadingButton: false });
       return;
     }
 
-    if(!this.validator.allValid()) {
+    if (!this.validator.allValid()) {
       this.validator.showMessages();
       this.forceUpdate();
       return;
     }
 
-    this.setState({answer: [<i class="material-icons icons">loop</i>, " Enviando sua mensagem..."]});
+    this.setState({ answer: [<i class="material-icons icons">loop</i>, " Enviando sua mensagem..."] });
 
     axios.post("", {
       name: this.state.name,
@@ -62,28 +62,28 @@ class Contato extends React.Component {
       subject: this.state.subject,
       message: this.state.message
     })
-    .then((response) => {
-      if(!response.data.error) {
-        this.setState({answer: [<i className="material-icons icons">check</i>, " Sua mensagem foi enviada com sucesso!"]});
-        this.setState({isLoadingButton: false});
-      }
-      else {
-        this.setState({answer: [<i className="material-icons icons">clear</i>, "Ops! Ocorreu algum erro ao enviar sua mensagem. Por favor, tente novamente."]});
-        this.setState({isLoadingButton: false});
-      }
-      //console.log(response);
-    })
-    .catch((error) => {
-      this.setState({answer: [<i className="material-icons icons">clear</i>, "Ops! Ocorreu algum erro ao enviar sua mensagem. Por favor, tente novamente."]});
-      this.setState({isLoadingButton: false});
-      //console.log(error);
-    });
+      .then((response) => {
+        if (!response.data.error) {
+          this.setState({ answer: [<i className="material-icons icons">check</i>, " Sua mensagem foi enviada com sucesso!"] });
+          this.setState({ isLoadingButton: false });
+        }
+        else {
+          this.setState({ answer: [<i className="material-icons icons">clear</i>, "Ops! Ocorreu algum erro ao enviar sua mensagem. Por favor, tente novamente."] });
+          this.setState({ isLoadingButton: false });
+        }
+        //console.log(response);
+      })
+      .catch((error) => {
+        this.setState({ answer: [<i className="material-icons icons">clear</i>, "Ops! Ocorreu algum erro ao enviar sua mensagem. Por favor, tente novamente."] });
+        this.setState({ isLoadingButton: false });
+        //console.log(error);
+      });
   }
 
-  render(){
+  render() {
     const { verifyCallback } = this;
-    return(
-      <div id="contato"> 
+    return (
+      <div id="contato">
         <div className="section">
           <div className="container">
             <div className="columns is-centered">
@@ -177,7 +177,7 @@ class Contato extends React.Component {
                         </div>
                       </div>
                     </div>
-                  
+
                     <div className="espaco" align="center">
                       <Recaptcha
                         sitekey=""
@@ -201,20 +201,20 @@ class Contato extends React.Component {
                 </div>
               </div>
             </div>
-            <br/>
+            <br />
             <div className="columns">
               <div className="column is-2"></div>
               <div className="column box-posicao" align="right">
                 <div className="box-texto">
                   <p className="texto">
                     Oi, tudo bem? Quer conversar ou fazer parceria com a gente? Nós do <strong>COM² Mulheres</strong> vamos adorar ler seu e-mail. É só preencher o formulário que entraremos em contato em breve.
-                    <br/>
+                    <br />
                     Ou se preferir, você pode nos encontrar no <strong><a id="instagram" href="https://www.instagram.com/com.mulheres/" target="_blank" rel="noopener noreferrer">Instagram</a></strong>, <strong><a id="facebook" href="https://www.facebook.com/com2mulheres/" target="_blank" rel="noopener noreferrer">Facebook</a></strong> ou no e-mail: <strong><a href="mailto:com.mulheres@gmail.com" target="_blank" rel="noopener noreferrer">com.mulheres@gmail.com</a></strong>.
                   </p>
                 </div>
               </div>
               <div className="column is-2 imagem">
-                <img src={xicara} alt=""/>
+                <img src={xicara} alt="" />
               </div>
             </div>
           </div>

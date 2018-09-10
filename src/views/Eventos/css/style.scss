@@ -9,6 +9,31 @@
     border: 1px dashed $azul_cinza;
   }
 
+  .button-active {
+    border: 2px solid;
+    border-radius: 2px;
+    font-family: $family-primary;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    min-width: 110px;
+    padding: 5px 5px 5px 10px;
+    color: $azul_cinza;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+  
+    i {
+      vertical-align: -6px;
+    }
+  
+    &:hover {
+      color: #000;
+    }
+  }
+
   .paginas {
     padding-top: 60px;
   }
@@ -98,12 +123,27 @@
   }
 }
 
+#pag-evento {
+  .image {
+    max-width: 500px;
+  }
+  .titulo {
+    color: $azul_claro;
+  }
+}
+
 @media (max-width:768px) {
   #eventos {
     #destaque {
       .padding-image {
         margin: 0 auto;
         padding-left: 0px;
+      }
+    }
+    #anteriores {
+      .box-right {
+        border-bottom: 1px dashed $azul_cinza;
+        border-right: none;
       }
     }
   }
@@ -119,6 +159,11 @@
         margin: 0 auto;
         padding-left: 0px;
         padding-top: 30px;
+      }
+    }
+    #anteriores {
+      .image {
+        max-width: 200px;
       }
     }
   }

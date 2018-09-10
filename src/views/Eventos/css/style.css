@@ -2,6 +2,26 @@
   border-radius: 0px;
   border: 1px dashed #727f8c; }
 
+#eventos .button-active {
+  border: 2px solid;
+  border-radius: 2px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-width: 110px;
+  padding: 5px 5px 5px 10px;
+  color: #727f8c;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  #eventos .button-active i {
+    vertical-align: -6px; }
+  #eventos .button-active:hover {
+    color: #000; }
+
 #eventos .paginas {
   padding-top: 60px; }
 
@@ -65,10 +85,19 @@
     font-size: 18px;
     padding-bottom: 20px; }
 
+#pag-evento .image {
+  max-width: 500px; }
+
+#pag-evento .titulo {
+  color: #486a8c; }
+
 @media (max-width: 768px) {
   #eventos #destaque .padding-image {
     margin: 0 auto;
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  #eventos #anteriores .box-right {
+    border-bottom: 1px dashed #727f8c;
+    border-right: none; } }
 
 @media (min-width: 769px) and (max-width: 977px) {
   #eventos #destaque .image {
@@ -76,4 +105,6 @@
   #eventos #destaque .padding-image {
     margin: 0 auto;
     padding-left: 0px;
-    padding-top: 30px; } }
+    padding-top: 30px; }
+  #eventos #anteriores .image {
+    max-width: 200px; } }

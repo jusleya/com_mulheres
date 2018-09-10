@@ -22,14 +22,9 @@ const Eventos = () => (
       <div className="container paginas">
         <div className="columns is-centered">
           <div className="column is-6">
-            <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-              <a class="pagination-previous">Previous</a>
-              <a class="pagination-next">Next page</a>
-              <ul class="pagination-list">
-                <li><a class="pagination-link" aria-label="Goto page 1" aria-current="page">1</a></li>
-                <li><span class="pagination-ellipsis">&hellip;</span></li>
-                <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
-              </ul>
+            <nav className="pagination is-centered" role="navigation" aria-label="pagination">
+              <a className="pagination-previous button-active">Anterior</a>
+              <a className="pagination-next button-active">Próximo</a>
             </nav>
           </div>
         </div>

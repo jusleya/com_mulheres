@@ -1,36 +1,78 @@
-import React from 'react';
-
-import womakers from '../image/womakers.jpg';
+import React, { Component } from 'react';
+import axios from 'axios';
 
 import '../css/style.css';
 
-const PagEvento = () => (
-  <div id="pag-evento">
-    <div className="section">
-      <div className="container">
-        <div align="center" className="columns is-centered">
-          <div className="column">
-            <img className="image" src={womakers} alt="" />
-          </div>
-        </div>
-        <div className="columns is-centered">
-          <div className="column is-10 title">
-            <h1 className="titulo">EVENTO</h1>
-          </div>
-        </div>
-        <div className="columns is-centered">
-          <div className="column is-10 body">
-            <p className="texto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor magna eu fermentum egestas. Maecenas est arcu, gravida ultrices tincidunt ac, bibendum sit amet erat. Quisque gravida eros vel diam lobortis, in euismod nunc volutpat. Aliquam erat volutpat. Nullam blandit venenatis elit, vitae lacinia turpis consequat a. Duis bibendum, metus vel rhoncus aliquam, neque massa malesuada lectus, at scelerisque diam nulla vel mauris. Donec vitae vehicula nisi, vel sodales magna. Cras ut sem vel diam faucibus dapibus imperdiet a ante. Praesent dictum vel turpis eu varius. Integer elementum nisi ac posuere rutrum. Donec est sapien, ullamcorper vel arcu eget, accumsan mollis nulla. Donec maximus fermentum rutrum.
-              <br/>
-              <br/>
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus fringilla purus placerat enim bibendum, id vulputate odio mattis. Donec lacinia nec elit egestas iaculis. Sed sit amet lacus dui. Maecenas tincidunt lacus eget arcu lobortis tempor. Quisque dapibus eros et vehicula efficitur. Integer eu neque a ante mollis commodo pulvinar ut purus. Cras mi metus, sollicitudin nec tincidunt cursus, faucibus in lorem. Mauris varius lacinia leo, vitae lobortis lacus ornare ut. Duis hendrerit sem id mi laoreet, vitae elementum ante porttitor. Proin aliquet ornare tellus. Fusce efficitur at mauris id porta. Pellentesque eleifend purus dictum quam faucibus, eget rutrum nulla molestie. Ut tortor quam, scelerisque nec tortor vehicula, sodales mattis nulla. Sed scelerisque turpis metus, viverra tincidunt magna elementum sit amet. Quisque sodales nunc nec urna fermentum tempus.
-            </p>
+class PagEvento extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      isLoading: true,
+      post: ''
+    }
+  }
+
+  componentDidMount() {
+    this.getPost();
+  }
+
+  getPost() {
+    axios.get(`${process.env.REACT_APP_API_BLOG_URI}/posts/${this.props.match.params.id}?_embed`)
+      .then((response) => {
+        this.setState({ post: response.data });
+        this.setState({ isLoading: false });
+      })
+      .catch((error) => {
+        console.log(error);
+        this.setState({ isLoading: false });
+      });
+  }
+
+  render() {
+    return (
+      <div id="pag-evento">
+        <div className="section">
+          <div className="container">
+            {this.state.isLoading ?
+              <div className="columns is-centered card-alert">
+                <div className="column is-6">
+                  <div className="box-card">
+                    <div className="center-icon">
+                      <i className="material-icons icon">more_horiz</i>
+                    </div>
+                    <p>Carregando notícia...</p>
+                  </div>
+                </div>
+              </div>
+              :
+              <div>
+                {
+                  this.state.post._embedded['wp:featuredmedia'] ?
+                    <div align="center" className="columns is-centered">
+                      <div className="column">
+                        <img className="image" src={this.state.post._embedded['wp:featuredmedia']['0'].media_details.sizes.full.source_url} alt="" />
+                      </div>
+                    </div>
+                    : null
+                }
+                <div className="columns is-centered">
+                  <div className="column is-10 title">
+                    <h1 className="titulo">{this.state.post.title.rendered}</h1>
+                  </div>
+                </div>
+                <div className="columns is-centered">
+                  <div className="column is-10 body">
+                    <div className="texto" dangerouslySetInnerHTML={{ __html: this.state.post.content.rendered }} />
+                  </div>
+                </div>
+              </div>
+            }
           </div>
         </div>
       </div>
-    </div>
-  </div>
-);
+    )
+  }
+}
 
 export default PagEvento;

@@ -4,6 +4,9 @@
 @import '../../../assets/styles/variables.scss';
 
 #eventos {
+  .align {
+    justify-content: center;
+  }
   .box-card {
     border-radius: 0px;
     border: 1px dashed $azul_cinza;

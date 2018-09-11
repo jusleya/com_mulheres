@@ -1,3 +1,6 @@
+#eventos .align {
+  justify-content: center; }
+
 #eventos .box-card {
   border-radius: 0px;
   border: 1px dashed #727f8c; }

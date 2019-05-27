@@ -94,7 +94,6 @@ class Adm extends React.Component {
             : null
           }
           
-          {/*Sthe*/}
           <Card image={props.image3} name={props.name3} funcao={props.funcao3}>
             <a className="is-hidden-mobile" onClick={props.changeC3}>
               {props.c3? 'Menos' : 'Ver Mais'}
@@ -111,18 +110,16 @@ class Adm extends React.Component {
               }
             </a>
           </Card>
-
           { props.c3 ?
             <div className="column">
               <div className={styleList}>
                 <div className="box-descricao">
                   <Descricao
-                    descricao={`Formada em Análise e Desenvolvimento de Sistemas; Desenvolvedora Java, C, C# e PHP; Entusiasta do Software Livre; Colaboradora do LibreOffice Brasil e dos grupos Computação com Mulheres e WoMakersCode. Trabalha com desenvolvimento de aplicativos e é apaixonada por Engenharia de Software.`}
-                    linkedin="https://br.linkedin.com/in/sthefane-camilo-soares-da-silva-49237985"
-                    instagram="https://www.instagram.com/sthe.soares/"
-                    facebook="http://commulheres.com/sobre"
-                    youtube="https://www.youtube.com/user/vidaprogramacao"
-                    email="mailto:sthedeveloper@gmail.com"
+                    descricao={`Estudante de Ciência da Computação na Universidade Federal de Sergipe. Atualmente membro bolsista da Comissão Organizadora dos Hackathons UFS. Entusiasta na área de front-end, migrando o para desenvolvimento mobile com linguagens nativas. Nas horas vagas, maratonista profissional de séries da Netflix, alternando com filmes em preto e branco, e documentários. Apaixonada por livros, HQ's, kickboxing e Engenharia de Software.`}
+                    linkedin="https://www.linkedin.com/in/natalia-guimar%C3%A3es-b2668347/"
+                    instagram="https://www.instagram.com/guimaraesnaty/"
+                    facebook="https://www.facebook.com/natalia.souza.127201"
+                    email="mailto:nataliasouzaguimaraes@gmail.com"
                   />
                 </div>
               </div>

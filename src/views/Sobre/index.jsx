@@ -3,7 +3,7 @@ import React from 'react';
 //Components
 import Equipe    from './components/Equipe';
 import Grupo     from './components/Grupo';
-import Parceiros from './components/Parceiros';
+// import Parceiros from './components/Parceiros';
 
 //CSS
 import './css/style.css';
@@ -13,7 +13,7 @@ const Sobre = () => (
     <div className="section">
       <Grupo />
       <Equipe />
-      <Parceiros />
+      {/* <Parceiros /> */}
     </div>
   </div>
 );

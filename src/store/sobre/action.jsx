@@ -13,26 +13,6 @@ export const changeC3 = () => ({
   payload: true
 })
 
-export const changeC4 = () => ({
-  type: 'VIEW_C4',
-  payload: true
-})
-
-export const changeC5 = () => ({
-  type: 'VIEW_C5',
-  payload: true
-})
-
-export const changeC6 = () => ({
-  type: 'VIEW_C6',
-  payload: true
-})
-
-export const changeC7 = () => ({
-  type: 'VIEW_C7',
-  payload: true
-})
-
 export const changeOculto = () => ({
   type: 'OCULTO_CHANGED',
   payload: true
